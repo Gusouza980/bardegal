@@ -24,6 +24,7 @@ class CreateNoticiasTable extends Migration
             $table->text('conteudo');
             $table->unsignedInteger('visualizacoes')->default(0);
             $table->boolean("destaque")->default(false);
+            $table->boolean("publicada")->default(true);
             $table->foreign('categoria_id')->references('id')->on('categorias');
             $table->foreign('usuario_id')->references('id')->on('usuarios');
             $table->timestamps();

@@ -20,7 +20,7 @@ body {
     background-color: black;
 }
 
-a:hover, a:focus, a:visited, a:active{
+a, a:hover, a:focus, a:visited, a:active{
 	text-decoration:none;
 	color: inherit;
 }
