@@ -39,25 +39,25 @@
                     <a class="nav-link" href="#"><i class="fab fa-whatsapp text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" href="{{route('site.index')}}">HOME</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="#">BERDEGA</a>
+                    <a class="nav-link" href="{{route('site.sobre')}}">BERDEGA</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="#">VINHOS</a>
+                    <a class="nav-link" href="{{route('site.vinhos')}}">VINHOS</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="#">CARDÁPIO</a>
+                    <a class="nav-link" href="{{route('site.cardapio')}}">CARDÁPIO</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="#">BLOG</a>
+                    <a class="nav-link" href="{{route('site.blog')}}">BLOG</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="#">GALERIA</a>
+                    <a class="nav-link" href="{{route('site.galeria')}}">GALERIA</a>
                 </li>
                 <li class="nav-item bg-laranja-1 py-4 px-3">
-                    <a class="nav-link" style="color: white !important;" href="#">CONTATO</a>
+                    <a class="nav-link" style="color: white !important;" href="{{route('site.contato')}}">CONTATO</a>
                 </li>
             </ul>
         </div>
@@ -391,6 +391,7 @@
 
     <!-- FONT AWESOME -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

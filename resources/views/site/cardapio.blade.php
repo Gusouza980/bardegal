@@ -28,19 +28,25 @@
             <div class="collapse navbar-collapse" style="background-color: black; color: white !important;" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto bg-branco text-center">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><span class="span-link link-active">HOME</span> <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{{route('site.index')}}"><span class="span-link link-active">HOME</span> <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pumpkin.html"><span class="span-link">PUMPKIN</span></a>
+                        <a class="nav-link" href="{{route('site.sobre')}}"><span class="span-link">BARDEGA</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cases.html"><span class="span-link">CASES</span></a>
+                        <a class="nav-link" href="{{route('site.vinhos')}}"><span class="span-link">VINHOS</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html"><span class="span-link">BLOG</span></a>
+                        <a class="nav-link" href="{{route('site.cardapio')}}"><span class="span-link">CARDÁPIO</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.html"><span class="span-link">CONTATO</span></a>
+                        <a class="nav-link" href="{{route('site.blog')}}"><span class="span-link">BLOG</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('site.galeria')}}"><span class="span-link">GALERIA</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('site.contato')}}"><span class="span-link">CONTATO</span></a>
                     </li>
                 </ul>
             </div>
@@ -86,31 +92,25 @@
         <div id="container-nav" class="d-none d-lg-block nav-bottom">
             <ul id="home-section1-nav">
                 <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    HOME
+                    <a href="{{route('site.index')}}">HOME</a>
                 </li>
                 <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    BARDEGA
+                    <a href="{{route('site.sobre')}}">BARDEGA</a>
                 </li>
                 <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    VINHOS
+                    <a href="{{route('site.vinhos')}}">VINHOS</a>
                 </li>
                 <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    CARDÁPIO
+                    <a href="{{route('site.cardapio')}}">CARDÁPIO</a>
                 </li>
                 <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    BLOG
+                    <a href="{{route('site.blog')}}">BLOG</a>
                 </li>
                 <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    GALERIA
+                    <a href="{{route('site.galeria')}}">GALERIA</a>
                 </li>
                 <li class="home-section1-nav-item px-4 pt-4 pb-3 bg-laranja-1 text-white">
-                    CONTATO
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3 bg-preto-1 text-white">
-                    EN
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3 bg-preto-1 text-white">
-                    <i class="fas fa-search"></i>
+                    <a href="{{route('site.contato')}}">CONTATO</a>
                 </li>
             </ul>
         </div>
@@ -514,6 +514,19 @@
 
     <!-- FONT AWESOME -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            console.log(currentScrollPos);
+            if (currentScrollPos > 400) {
+                $("#container-nav").removeClass('nav-bottom');
+                $("#container-nav").addClass('nav-rolled');
+            } else {
+                $("#container-nav").addClass('nav-bottom');
+                $("#container-nav").removeClass('nav-rolled');
+            }
+        }
+    </script>
 </body>
 
 </html>
