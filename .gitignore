@@ -1,6 +1,8 @@
 /node_modules
 /public/hot
 /public/storage
+/public/site/imagens/noticias
+/public/site/imagens/galeria
 /storage/*.key
 /vendor
 .env

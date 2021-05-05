@@ -1,22 +1,6 @@
-<!doctype html>
-<html lang="pt-br">
-
-<head>
-    <title>Bardega</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="{{asset('site/css/main.css')}}">
-</head>
-
+@include('site.includes.head')
 <body>
+    @include('site.includes.fork')
     <div class="container-fluid"  id="nav-mobile-container">
 
         <nav class="navbar navbar-expand-lg navbar-light d-block d-lg-none">
@@ -87,10 +71,10 @@
         </div>
         <div class="d-none d-md-block" style="display: block; position: absolute; top: 25px; left: 25px;">
             <img class="w-100" src="{{asset('site/imagens/logo-branca.png')}}" alt="Logo Bardega">
-        </div>
-        <div class="d-none d-md-block" style="display: block; position: absolute; top: calc(50% - 50px); left: 0px; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+        </div>  
+        {{--  <div class="d-none d-md-block" style="display: block; position: absolute; top: calc(50% - 50px); left: 0px; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
             <img class="w-100" src="{{asset('site/imagens/botao-reserva-mesa.png')}}" alt="Reservar mesa">
-        </div>
+        </div>  --}}
 
         <div id="container-nav" class="d-none d-lg-block nav-bottom">
             <ul id="home-section1-nav">
@@ -115,12 +99,6 @@
                 <li class="home-section1-nav-item px-4 pt-4 pb-3 bg-laranja-1 text-white">
                     <a href="{{route('site.contato')}}">CONTATO</a>
                 </li>
-                {{--  <li class="home-section1-nav-item px-4 pt-4 pb-3 bg-preto-1 text-white">
-                    EN
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3 bg-preto-1 text-white">
-                    <i class="fas fa-search"></i>
-                </li>  --}}
             </ul>
         </div>
 
@@ -128,7 +106,7 @@
             <div class="container-fluid px-0 py-0">
                 <div class="row mx-0">
                     <div class="col-12 px-0">
-                        <div class="row pt-5 mt-5 mx-0">
+                        <div class="row mt-5 mx-0">
                             <div class="col-12 py-3 px-0 text-center">
                                 <i class="fab fa-instagram fa-lg text-white"></i>
                             </div>
@@ -146,19 +124,6 @@
                         <div class="row pb-5 mx-0">
                             <div class="col-12 py-3 px-0 text-center">
                                 <i class="fab fa-facebook fa-lg text-white"></i>
-                            </div>
-                        </div>
-                        <div class="row mx-0 mt-2 py-3 text-center justify-content-center">
-                            <div class="col-2 px-0 text-center" id="home-section1-nav-lateral-page-number">
-                                <span>1 / 5</span>
-                            </div>
-                        </div>
-                        <div class="row mx-0">
-                            <div class="col-6 home-section1-nav-lateral-page-buttons bg-preto-1 text-white py-3">
-                                <i class="fas fa-chevron-left fa-sm"></i>
-                            </div>
-                            <div class="col-6 home-section1-nav-lateral-page-buttons bg-laranja-1 text-white py-3">
-                                <i class="fas fa-chevron-right fa-sm"></i>
                             </div>
                         </div>
                     </div>
@@ -203,8 +168,7 @@
         </div>
         <div class="row d-flex justify-content-center mt-4">
             <div class="col-8">
-                <img src="{{asset('site/imagens/video-home-section2.png')}}" class="w-100" alt="Vídeo Bardega">
-            </div>
+                <iframe class="home-section2-video" src="https://www.youtube.com/embed/va6fODhfhyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
         </div>
     </div>
     <div class="container-fluid bg-preto-1 d-none d-lg-block">
@@ -238,7 +202,7 @@
                     </div>
 
                 </div>
-                <img src="{{asset('site/imagens/video-home-section2.png')}}" class="w-100" alt="">
+                <iframe class="home-section2-video" src="https://www.youtube.com/embed/va6fODhfhyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
             </div>
         </div>
     </div>
@@ -492,120 +456,7 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-branco-1">
-        <div class="row">
-            <div class="col-12 col-lg-5 pt-5">
-                <div class="row pt-0 pt-lg-5 h-100">
-                    <div class="col-12 col-lg-6 d-none d-lg-block" id="footer-1">
-                        
-                    </div>
-                    <div class="col-12 col-lg-6 mt-0 mt-lg-5">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12 px-0 text-center text-lg-left">
-                                    <img src="{{asset('site/imagens/footer-2.png')}}" id="footer-logo" alt="Logo footer">
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-12 text-center text-lg-left">
-                                    <button id="footer-button-1">Reservar Mesa</button>
-                                </div>
-                            </div>
-                            <div class="row mt-5">
-                                <div class="col-12 text-center text-lg-left pb-5 pb-lg-0" id="footer-text-1">
-                                    (11) 2691 7578<br> 
-                                    (11) 26917579<br><br> 
-                                    reservas@bardega.com.br<br> 
-                                    contato@bardega.com.br<br><br> 
-                                    Rua Dr. Alceu de Campos Rodrigues, 218 Itaim Bibi - São Paulo, SP - 04544-000<br><br>
-                                    Terça a Sábado Das 16h às 22h
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-7 bg-preto-1 pt-5">
-                <div class="row">
-                    <div class="col-12 col-lg-7">
-                        <div class="container-fluid pl-5">
-                            <div class="row">
-                                <div class="col-12 text-center text-lg-left footer-newsletter-text">
-                                    <h5>Newsletter</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 footer-newsletter-text text-center text-lg-left">
-                                    <span>Junte-se à nossa lista de discussão e<br>mantenha-se atualizado com a Bardega</span>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-12 text-center text-lg-left" id="footer-newsletter-input">
-                                    <input type="text" name="email" placeholder=" Informe seu e-mail">
-                                    <button class="ml-n1">Enviar</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 footer-newsletter-text text-center text-lg-left">
-                                    <span>Ao enviar seu e-mail, você aceita a política de privacidade.</span>
-                                </div>
-                            </div>
-                            <div class="row mt-5">
-                                <div class="col-12">
-                                    <div class="text-white text-center text-lg-left" id="footer-links">
-                                        <ul class="px-0" style="list-style: none;">
-                                            <li><i class="fas fa-chevron-right"></i>&nbsp;&nbsp; Home</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Sobre o Bardega</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Vinhos</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Cardápio</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Blog</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Galeria</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Contato</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-5 mt-5">
-                        <div class="container-fluid pt-4">
-                            <div class="row">
-                                <div class="col-12 col-lg-7 offset-lg-4 text-center footer-advisor-text">
-                                    <h5>TripAdvisor</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-7 offset-lg-4 text-center footer-advisor-text">
-                                    <img src="{{asset('site/imagens/advisor.png')}}" id="footer-image-advisor" alt="Advisor">
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-lg-4 text-center text-lg-left footer-advisor-text">
-                                    <img src="{{asset('site/imagens/advisor-2.png')}}" id="footer-image-advisor2" alt="Advisor 2">
-                                </div>
-                                <div class="col-12 col-lg-8 text-center text-lg-left footer-advisor-text">
-                                    <span>Curta nossas redes sociais e fique por dentro de tudo o que acontece. </span>
-                                    <p class="mt-3">
-                                        <i class="fab fa-facebook text-white fa-lg"></i>
-                                        <i class="fab fa-instagram text-white fa-lg ml-3"></i>
-                                        <i class="fab fa-twitter text-white fa-lg ml-3"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div id="footer-direitos" class="text-center text-sm-left col-12 col-sm-6 footer-direitos-text pl-0 pl-sm-5">
-                        Todos os direitos reservados
-                    </div>
-                    <div id="footer-copy" class="text-center text-sm-right col-12 col-sm-6 footer-copy-text text-right pr-0 pr-sm-5">
-                        DESENVOLVIDO POR <img src="{{asset('site/imagens/footer-seven.png')}}" alt="Logo 7seven"> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('site.includes.footer')
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -615,10 +466,10 @@
 
     <!-- FONT AWESOME -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+    <script src="{{asset('site/js/jsfb.js')}}"></script>
     <script>
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
-            console.log(currentScrollPos);
             if (currentScrollPos > 400) {
                 $("#container-nav").removeClass('nav-bottom');
                 $("#container-nav").addClass('nav-rolled');

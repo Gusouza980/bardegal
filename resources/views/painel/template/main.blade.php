@@ -269,29 +269,22 @@ $usuario = \App\Models\Usuario::find(session()->get("usuario")["id"]);
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="waves-effect">
-                                    <i class="fas fa-tags" aria-hidden="true"></i>
-                                    <span key="t-dashboards">Tags</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="{{route('painel.tags')}}" key="t-default">Cadastros</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript: void(0);" class="waves-effect">
-                                    <i class="fas fa-list" aria-hidden="true"></i>
-                                    <span key="t-dashboards">Categorias</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="{{route('painel.categorias')}}" key="t-default">Cadastros</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript: void(0);" class="waves-effect">
                                     <i class="far fa-sticky-note" aria-hidden="true"></i>
                                     <span key="t-dashboards">Notícias</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="{{route('painel.noticias')}}" key="t-default">Cadastros</a></li>
+                                    <li><a href="{{route('painel.categorias')}}" key="t-default">Categorias</a></li>
+                                    <li><a href="{{route('painel.tags')}}" key="t-default">Tags</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="far fa-image" aria-hidden="true"></i>
+                                    <span key="t-dashboards">Galeria</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{route('painel.galeria')}}" key="t-default">Cadastros</a></li>
                                 </ul>
                             </li>
                         </ul>

@@ -1,0 +1,3103 @@
+@font-face {
+    font-family: 'Muli-Aux';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Muli Light'), local('Muli-Light');
+    src: url('fontes/muli-300.eot?'), url('fontes/muli-300.eot?#iefix') format('embedded-opentype'), url('fontes/muli-300.woff') format('woff'), url('fontes/muli-300.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Shadows-Aux';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Shadows Into Light Two'), local('ShadowsIntoLightTwo-Regular');
+    src: url('fontes/shadows-into-light-two.eot?'), url('fontes/shadows-into-light-two.eot?#iefix') format('embedded-opentype'), url('fontes/shadows-into-light-two.woff') format('woff'), url('fontes/shadows-into-light-two.ttf') format('truetype')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0
+}
+
+body {
+    color: #555;
+    background: #fff url(img/iBg.png) repeat;
+    font: 23px Muli, Muli-Aux, 'AvantGarde Bk BT', Arial, Tahoma, Sans-Serif;
+    letter-spacing: -1px
+}
+
+body a {
+    color: #555;
+    text-decoration: none
+}
+
+body a:hover {
+    text-decoration: underline
+}
+
+body img {
+    border: 0
+}
+
+body .esq {
+    float: left
+}
+
+body .dir {
+    float: right
+}
+
+body .oculto {
+    display: none
+}
+
+body .lin {
+    float: left;
+    width: 100%
+}
+
+.fxa {
+    float: left;
+    width: 100%;
+    min-width: 990px;
+    position: relative
+}
+
+.fxa.vale {
+    min-height: 300px
+}
+
+.cnt {
+    width: 960px;
+    margin: auto
+}
+
+.cnt.g {
+    width: 1000px
+}
+
+.box {
+    float: left;
+    width: 960px;
+    min-height: 50px;
+    margin: 0 20px
+}
+
+.box.c1 {
+    width: 627px
+}
+
+.box.c2 {
+    width: 460px
+}
+
+.box.c,
+.box.c3 {
+    width: 293px
+}
+
+.box.c4 {
+    width: 210px
+}
+
+.fp {
+    background: #000;
+    color: #fff
+}
+
+.fb {
+    background: #fff;
+    color: #000
+}
+
+.fa {
+    background: #204892;
+    color: #fff
+}
+
+.fp.s,
+.fb.s {
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .4)
+}
+
+.fp.s {
+    background: rgba(0, 0, 0, .8)
+}
+
+.fb.s {
+    background: rgba(255, 255, 255, .9)
+}
+
+.bor {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+
+.menu {
+    float: right
+}
+
+.menu li {
+    float: right;
+    list-style: none
+}
+
+.menu li a {
+    float: left
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: -2px
+}
+
+h2 {
+    float: left;
+    margin-bottom: 40px;
+    padding: 10px 35px;
+    font-size: 36px;
+    font-weight: normal
+}
+
+.cnt.g>h2 {
+    margin-left: 15px
+}
+
+h3 {
+    float: left;
+    font-size: 30px;
+    font-weight: normal
+}
+
+p {
+    float: left;
+    font-size: 23px
+}
+
+p .des {
+    color: #b73f7a;
+    font-family: 'Shadows Into Light Two', Shadows-Aux, Muli;
+    letter-spacing: 0
+}
+
+.sep-sup {
+    margin-top: 20px
+}
+
+.sep-sup-30 {
+    margin-top: 30px
+}
+
+.sep-sup-40 {
+    margin-top: 40px
+}
+
+.sep-sup-60 {
+    margin-top: 60px
+}
+
+.btn {
+    float: left;
+    padding: 6px 15px;
+    font-size: 18px
+}
+
+.btn i {
+    float: right
+}
+
+.btn b {
+    float: left
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: #80003f
+}
+
+.btn.fa:hover {
+    background-color: #2657b0
+}
+
+.btn-cir {
+    float: left;
+    width: 46px;
+    height: 46px;
+    position: relative
+}
+
+.btn-cir img {
+    position: absolute;
+    width: 100%
+}
+
+.btn-cir img.vin {
+    display: none
+}
+
+.tt {
+    background: url(img/iTolFun.png) repeat;
+    border: 1px solid #000;
+    color: #eee !important;
+    font-size: 14px !important;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: none !important;
+    padding: 8px 12px;
+    position: absolute;
+    white-space: nowrap;
+    display: none;
+    z-index: 1001
+}
+
+.tt.bra {
+    background-image: url(img/iTolFunBra.png);
+    border-color: #fff;
+    color: #b73f7a !important
+}
+
+.tt.t,
+.tt.b {
+    max-width: 200px;
+    box-shadow: -1px 2px 8px #999;
+    -moz-box-shadow: -1px 2px 8px #999;
+    -webkit-box-shadow: -1px 2px 8px #999
+}
+
+.tt.t {
+    border-bottom: 0
+}
+
+.tt.b {
+    border-top: 0
+}
+
+.tt.e {
+    border-right: 0
+}
+
+.tt.d {
+    border-left: 0
+}
+
+.tt i {
+    position: absolute
+}
+
+.tt.t i,
+.tt.b i {
+    height: 12px;
+    left: 0;
+    right: 0
+}
+
+.tt.e i,
+.tt.d i {
+    width: 12px;
+    top: 0;
+    bottom: 0
+}
+
+.tt.t i {
+    background: url(img/iTolTop.png) center 0 no-repeat;
+    bottom: -10px
+}
+
+.tt.b i {
+    background: url(img/iTolBas.png) center 0 no-repeat;
+    top: -10px
+}
+
+.tt.e i {
+    background: url(img/iTolEsq.png) 0 center no-repeat;
+    right: -10px
+}
+
+.tt.d i {
+    background: url(img/iTolDir.png) 0 center no-repeat;
+    left: -10px
+}
+
+.tt.bra.t i {
+    background-image: url(img/iTolTopBra.png)
+}
+
+.tt.bra.b i {
+    background-image: url(img/iTolBasBra.png)
+}
+
+.tt.bra.e i {
+    background-image: url(img/iTolEsqBra.png)
+}
+
+.tt.bra.d i {
+    background-image: url(img/iTolDirBra.png)
+}
+
+.cor-vin {
+    color: #b73f7a
+}
+
+.bgBol {
+    background: url(img/iBg2.jpg) repeat
+}
+
+.ret {
+    background: url(img/iRet.png) repeat
+}
+
+.gar {
+    width: 1500px;
+    height: 109px;
+    background: url(img/garrafa-bardega.png) right 0 repeat-x;
+    top: 13px;
+    right: 50%;
+    margin-right: 510px;
+    position: absolute
+}
+
+a.fot {
+    position: relative
+}
+
+a.fot.s {
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .1)
+}
+
+a.fot>img {
+    border-bottom: 1px solid #000
+}
+
+a.fot span.dat {
+    position: absolute;
+    width: 100%;
+    bottom: 1px;
+    left: 0;
+    font-size: 15px;
+    line-height: 32px;
+    background: rgba(255, 255, 255, .9);
+    z-index: 100
+}
+
+a.fot span.dat b {
+    float: left;
+    width: 16px;
+    height: 15px;
+    margin: 8px;
+    background: url(img/iCalen.png) no-repeat
+}
+
+a.fot span.dat.img b {
+    background: url(img/iFot2.png) no-repeat
+}
+
+a.fot .hov {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(img/iRet.png) repeat;
+    color: #fff;
+    display: none
+}
+
+a.fot .hov .tit {
+    float: left;
+    width: 80%;
+    margin: 10% 10% 0;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .5)
+}
+
+a.fot .hov .data {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center
+}
+
+a.fot .hov .btn-cir {
+    margin: 8% 42.5%
+}
+
+.box.c3 span.sep {
+    float: left;
+    width: 100%;
+    height: 1px;
+    margin: 25px 0;
+    background: url(img/Sep.png) repeat-x
+}
+
+.box.c3 a.not {
+    float: left;
+    width: 100%
+}
+
+.box.c3 a.not span.fp {
+    float: left;
+    width: 52px;
+    height: 72px;
+    clear: left
+}
+
+.box.c3 a.not span.fp b {
+    float: left;
+    width: 100%;
+    height: 32px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 2px
+}
+
+.box.c3 a.not span.fp i {
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 16px
+}
+
+.box.c3 a.not span.con {
+    float: left;
+    width: 215px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 25px
+}
+
+.box.c3 a.not:hover {
+    color: #b73f7a
+}
+
+.box.c3 a.not:hover span.fp {
+    background: #80003f
+}
+
+.box.c3 a.fp {
+    margin-top: 30px
+}
+
+.ate.box.c3 h3 {
+    float: left;
+    width: 260px;
+    font-size: 23px;
+    font-weight: normal
+}
+
+.ate.box.c3 span.hor {
+    float: left;
+    width: 260px;
+    margin-top: 7px;
+    background: url(img/iRel.png) no-repeat 0 4px !important;
+    font-size: 22px;
+    padding-left: 30px
+}
+
+.ate.box.c3 span.hor+h3 {
+    margin-top: 25px
+}
+
+.val-pre p {
+    float: left;
+    font-size: 20px;
+    margin-top: 25px
+}
+
+#pag {
+    height: 70px;
+    padding-top: 20px
+}
+
+#pag .p {
+    float: left;
+    background: url(img/iPag.png) no-repeat;
+    color: #fff
+}
+
+#pag .p:hover,
+#pag .p.sel {
+    text-decoration: none;
+    color: #9c3669
+}
+
+#pag .p.sel {
+    cursor: default
+}
+
+#pag .p {
+    width: 42px;
+    height: 52px
+}
+
+#pag .ant,
+#pag .pro {
+    width: 52px
+}
+
+#pag .pag {
+    text-align: center;
+    line-height: 52px
+}
+
+#pag .pri {
+    background-position: 0 0;
+    margin-left: 5px
+}
+
+#pag .ant {
+    background-position: -42px 0;
+    margin: 0 25px 0 5px
+}
+
+#pag .pag {
+    background-position: -95px 0;
+    margin-left: 2px
+}
+
+#pag .pro {
+    background-position: -138px 0;
+    margin: 0 5px 0 25px
+}
+
+#pag .ult {
+    background-position: -190px 0
+}
+
+#pag .pri:hover {
+    background-position: 0 -52px
+}
+
+#pag .ant:hover {
+    background-position: -42px -52px
+}
+
+#pag .pag:hover,
+#pag .pag.sel {
+    background-position: -95px -52px
+}
+
+#pag .pro:hover {
+    background-position: -138px -52px
+}
+
+#pag .ult:hover {
+    background-position: -190px -52px
+}
+
+#pag .pri:active {
+    margin: 0 1px 0 4px
+}
+
+#pag .ant:active {
+    margin: 0 26px 0 4px
+}
+
+#pag .pag:active {
+    margin-top: 1px
+}
+
+#pag .pro:active {
+    margin: 0 4px 0 26px
+}
+
+#pag .ult:active {
+    margin-left: 1px
+}
+
+#pag .pri.ina {
+    background-position: 0 -104px;
+    margin: 0
+}
+
+#pag .ant.ina {
+    background-position: -42px -104px;
+    margin: 0 25px 0 5px
+}
+
+#pag .pro.ina {
+    background-position: -138px -104px;
+    margin: 0 5px 0 25px
+}
+
+#pag .ult.ina {
+    background-position: -190px -104px;
+    margin: 0
+}
+
+.msg {
+    float: left;
+    width: 350px
+}
+
+.msg .cab {
+    float: left;
+    width: 310px;
+    padding: 10px 20px;
+    color: #b73f7a;
+    background: url("img/iBg2.jpg") repeat scroll 200px 7px transparent;
+    border-bottom: 1px solid #e3e3e3
+}
+
+.msg h2 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 30px
+}
+
+.msg .x {
+    float: right;
+    margin-top: 12px;
+    font-size: 15px
+}
+
+.msg .x:hover {
+    color: #b73f7a;
+    text-decoration: none
+}
+
+.msg p {
+    float: left;
+    width: 310px;
+    padding: 30px 20px;
+    font-size: 18px
+}
+
+.msg .rod {
+    float: left;
+    width: 310px;
+    border-top: 1px solid #ddd;
+    padding: 15px 20px
+}
+
+.msg .btn {
+    font-size: 15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+
+#cor .msg {
+    display: none
+}
+
+#img-full>b {
+    background: url(img/iSldBg.png) repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute
+}
+
+#img-full>i {
+    width: 100%;
+    height: 33px;
+    background: url(img/iCabSom.png) repeat-x;
+    top: 140px;
+    left: 0;
+    position: absolute
+}
+
+#img-full>q {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    text-indent: -999em;
+    background: url(img/iPreSld.gif) no-repeat center center
+}
+
+#img-full .cab {
+    float: left;
+    width: 100%;
+    height: 135px;
+    background: #fff url(img/iBg.png) repeat;
+    border-top: 3px solid #000;
+    border-bottom: 2px solid #fff;
+    position: relative
+}
+
+#img-full .cab .bar-log {
+    float: left;
+    width: 237px;
+    height: 109px;
+    background: url(img/bardega-logo-h.png) no-repeat;
+    margin: 15px 0 0 1px
+}
+
+#img-full .cab .bar-log i {
+    float: left;
+    width: 237px;
+    height: 109px;
+    background: url(img/bardega-logo.png) no-repeat
+}
+
+#img-full .cab ul.menu li {
+    padding-top: 38px
+}
+
+#img-full .cab ul.menu li a {
+    margin: 0 0 0 5px;
+    position: relative
+}
+
+#img-full .cab ul.menu li a img {
+    float: left;
+    width: 67px;
+    height: 67px
+}
+
+#img-full .cab ul.menu li a.app:hover .app {
+    text-decoration: underline
+}
+
+#img-full .cab ul.menu li a.app .app {
+    float: left;
+    margin: 16px 5px 0 0;
+    font-size: 13px;
+    text-align: right;
+    text-transform: uppercase
+}
+
+#cab {
+    float: left;
+    background: #fff url(img/iBg.png) repeat;
+    border-top: 3px solid #000
+}
+
+#cab ul.menu li a {
+    margin: 10px 0 10px 5px;
+    cursor: pointer
+}
+
+#cab ul.menu li a img {
+    float: left;
+    width: 37px
+}
+
+#cab ul.menu li a span {
+    float: left;
+    margin: 10px 10px 0 0;
+    font-size: 13px;
+    text-align: right;
+    text-transform: uppercase
+}
+
+#img-full .con {
+    float: left;
+    width: 100%;
+    position: relative;
+    display: none
+}
+
+#img-full .con h1 {
+    float: left;
+    margin-top: 70px
+}
+
+#img-full .con h1 .fp a {
+    color: #fff
+}
+
+#img-full .con h1 .fb a {
+    color: #000
+}
+
+#img-full .con span {
+    float: left;
+    margin-top: 15px;
+    padding: 10px 30px;
+    clear: left
+}
+
+#img-full .con #tex {
+    float: right;
+    width: 390px;
+    height: 390px;
+    margin-top: 215px;
+    background: url(img/SlideTex.png) no-repeat;
+    position: relative
+}
+
+#img-full .con #tex span {
+    float: left;
+    margin: 60px 0 0 7px;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff
+}
+
+#img-full .con #tex b {
+    display: block;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 20px
+}
+
+#img-full .con #tex .btn-cir {
+    width: 97px;
+    height: 97px;
+    margin: -30px 0
+}
+
+#img-full .con .vej {
+    position: relative;
+    float: left;
+    width: 109px;
+    height: 109px;
+    background: url(img/veja.png) no-repeat;
+    margin: -10px 0 -110px -10px;
+    z-index: 100;
+    transition: all .25s;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s
+}
+
+#img-full .con .vej:hover {
+    opacity: .95
+}
+
+.men {
+    float: left;
+    width: 100%;
+    min-width: 990px;
+    height: 135px;
+    background-color: rgba(0, 0, 0, .85);
+    position: relative
+}
+
+.p-defa .men>i {
+    width: 100%;
+    height: 35px;
+    background: url(img/iMenSom1.png) repeat-x;
+    top: -35px;
+    left: 0;
+    position: absolute
+}
+
+.men>b {
+    width: 100%;
+    height: 25px;
+    background: url(img/iMenSom2.png) repeat-x;
+    left: 0;
+    bottom: -25px;
+    position: absolute
+}
+
+.men a {
+    width: 81px;
+    height: 81px;
+    margin: 27px 0 0 10px;
+    background: url(img/iMenu.png) no-repeat;
+    position: relative
+}
+
+.men a.sob {
+    background-position: -81px 0
+}
+
+.men a.vin {
+    background-position: -162px 0
+}
+
+.men a.car {
+    background-position: -243px 0
+}
+
+.men a.not {
+    background-position: -324px 0
+}
+
+.men a.gal {
+    background-position: -405px 0
+}
+
+.men a.cont {
+    background-position: -486px 0
+}
+
+.men a.pri:hover,
+.p-defa .men a.pri {
+    background-position: 0 -81px
+}
+
+.men a.sob:hover,
+.p-sobr .men a.sob {
+    background-position: -81px -81px
+}
+
+.men a.vin:hover,
+.p-vinh .men a.vin {
+    background-position: -162px -81px
+}
+
+.men a.car:hover,
+.p-card .men a.car {
+    background-position: -243px -81px
+}
+
+.men a.not:hover,
+.p-noti .men a.not {
+    background-position: -324px -81px
+}
+
+.men a.gal:hover,
+.p-gale .men a.gal {
+    background-position: -405px -81px
+}
+
+.men a.cont:hover,
+.p-cont .men a.cont {
+    background-position: -486px -81px
+}
+
+.men #conheca {
+    float: left;
+    width: 165px;
+    height: 70px;
+    margin: 44px 0;
+    padding-left: 90px;
+    background: url(img/iSetaBai.png) no-repeat 0 7px;
+    color: #ddd;
+    line-height: 25px;
+    cursor: pointer
+}
+
+.men #conheca i {
+    font-size: 30px;
+    font-style: normal
+}
+
+.men #conheca:hover {
+    background-position: 0 -60px;
+    color: #fff
+}
+
+.men .gar {
+    background-position: right -120px
+}
+
+.men .bar-log {
+    float: left;
+    width: 237px;
+    height: 109px;
+    background: url(img/bardega-logo-h.png) no-repeat;
+    margin-top: 13px
+}
+
+.men .bar-log i {
+    float: left;
+    width: 237px;
+    height: 109px;
+    background: url(img/bardega-logo-b.png) no-repeat
+}
+
+.p-defa .men {
+    margin-top: -135px
+}
+
+#garrafas,
+#bar-log {
+    display: none
+}
+
+#supersized {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: -999;
+    height: 100%;
+    width: 100%
+}
+
+#supersized img {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: none;
+    outline: none;
+    border: none
+}
+
+#supersized.speed img {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -moz-crisp-edges
+}
+
+#supersized.quality img {
+    -ms-interpolation-mode: bicubic;
+    image-rendering: optimizeQuality
+}
+
+#supersized li {
+    display: block;
+    list-style: none;
+    z-index: -30;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111
+}
+
+#supersized a {
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
+#supersized li.prevslide {
+    z-index: -20
+}
+
+#supersized li.activeslide {
+    z-index: -10
+}
+
+#supersized li.image-loading {
+    background: #111 url(../img/progress.gif) no-repeat center center;
+    width: 100%;
+    height: 100%
+}
+
+#supersized li.image-loading img {
+    visibility: hidden
+}
+
+#supersized li.prevslide img,
+#supersized li.activeslide img {
+    display: inline
+}
+
+#img-full {
+    width: 100%;
+    height: 670px;
+    min-width: 990px;
+    min-height: 670px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: -999
+}
+
+.p-defa #img-full {
+    float: left;
+    width: 100%;
+    height: auto;
+    min-width: 990px;
+    min-height: 700px;
+    position: relative
+}
+
+#rod {
+    background-color: #000;
+    color: #fff;
+    font-size: 19px;
+    position: relative
+}
+
+#rod>i {
+    width: 100%;
+    height: 35px;
+    background: url(img/iRodSom.png) repeat-x;
+    top: -35px;
+    left: 0;
+    position: absolute
+}
+
+#rod .red {
+    min-height: 120px;
+    border-bottom: 1px solid #3f3f3f
+}
+
+#rod .red a {
+    float: left;
+    width: 138px;
+    height: 31px;
+    margin: 42px 15px 0;
+    background: url(img/FacTwi.png) no-repeat 0 0
+}
+
+#rod .red a.twi {
+    margin: 42px 0 0 60px;
+    background-position: -138px 0
+}
+
+#rod .red a:hover {
+    background-position: 0 -32px
+}
+
+#rod .red a.twi:hover {
+    background-position: -138px -32px
+}
+
+#rod .red span {
+    float: left;
+    min-width: 155px;
+    height: 26px;
+    margin: 41px 0 0 10px;
+    padding: 3px 5px
+}
+
+#rod .red span i {
+    float: left;
+    width: 8px;
+    height: 13px;
+    margin: 6px 0 0 -13px;
+    background: url(img/iSeta.png) no-repeat
+}
+
+#rod .red .aux {
+    min-width: 100px;
+    padding: 6px 0 0 8px
+}
+
+#rod .red .aux i {
+    margin: 4px 0 0 -16px
+}
+
+#rod .red #top {
+    float: right;
+    width: 58px;
+    height: 57px;
+    margin: 30px 15px 0 0;
+    background: url(img/iTop.jpg) no-repeat
+}
+
+#rod .red .fb_iframe_widget span {
+    margin: 0
+}
+
+#rod .red #top:hover {
+    background-position: 0 -58px;
+    cursor: pointer
+}
+
+#rod h3 {
+    float: left;
+    width: 100%;
+    padding: 45px 0;
+    font: normal 28px Muli;
+    color: #fff;
+    letter-spacing: -1px
+}
+
+#rod h3.trip {
+    float: right;
+    width: 243px
+}
+
+#rod h3.trip a {
+    float: right;
+    width: 44px;
+    height: 27px;
+    margin-top: 5px;
+    background: url(img/trip.png) no-repeat;
+    opacity: .8
+}
+
+#rod h3.trip a:hover {
+    opacity: 1
+}
+
+#rod .box span.t {
+    float: left;
+    width: 350px;
+    color: #b3b3b3;
+    background: url(img/iRod.jpg) no-repeat 0 40px;
+    padding-left: 30px
+}
+
+#rod .box span.t.tel {
+    margin-bottom: 5px;
+    font-size: 20px;
+    background-position: 0 4px
+}
+
+#rod .box span.t.ema {
+    background-position: 0 -18px
+}
+
+#rod .box span.t.ema.e1 {
+    margin-top: 31px
+}
+
+#rod .box span.t.ema.e2 {
+    margin: 5px 0 35px
+}
+
+#rod .box span.t.ema a {
+    color: #b3b3b3
+}
+
+#rod .box span.t.ema a:hover {
+    color: #fff;
+    text-decoration: undeline
+}
+
+#rod .box span.t.end {
+    background-position: 0 -45px;
+    line-height: 22px;
+    white-space: nowrap;
+    margin-bottom: 35px
+}
+
+#rod .box span.t.ate {
+    background: url(img/iRel.jpg) 1px 2px no-repeat
+}
+
+#rod .box span.t.ate+.ate {
+    margin-top: 7px
+}
+
+#rod .box.c1 .avi {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    color: #b3b3b3
+}
+
+#rod .box.c1 .avi span {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #df242d
+}
+
+#rod .box.c1 {
+    width: 530px
+}
+
+#rod .box.c2 {
+    width: 390px
+}
+
+#rod .box.c3 {
+    width: 280px
+}
+
+#rod .box>ul {
+    float: left;
+    padding-left: 2px
+}
+
+#rod .box>ul li {
+    list-style: none
+}
+
+#rod .box>ul li a {
+    float: left;
+    height: 13px;
+    margin-bottom: 20px;
+    background: url(img/iSet.png) 0 0 no-repeat;
+    clear: left;
+    color: #b3b3b3;
+    padding-left: 20px;
+    line-height: 13px
+}
+
+#rod .box>ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-position: 0 -13px
+}
+
+#rod .box #trip {
+    float: right;
+    width: 240px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+
+#rod .box #trip #TA_selfserveprop341 {
+    float: left;
+    margin: -62px 0
+}
+
+.firefox #rod .box #trip {
+    padding: 8px 0 4px
+}
+
+#rod .box a.fb {
+    float: right;
+    width: 230px;
+    height: 28px;
+    margin-top: 25px;
+    padding: 8px 0 8px 10px;
+    background: #fff url(img/iApp.png) no-repeat 10px 8px;
+    font: bold 12px/28px Muli;
+    text-transform: uppercase;
+    text-indent: 23px;
+    letter-spacing: .03em
+}
+
+#rod .rod {
+    min-height: 120px;
+    margin-top: 60px;
+    border-top: 1px solid #3f3f3f;
+    background-color: #191919
+}
+
+#rod .rod a {
+    float: right;
+    width: 68px;
+    height: 29px;
+    margin: 50px 20px 0 0;
+    background: url(img/Smart-Publicidade.png) no-repeat -68px 0
+}
+
+#rod .rod a:hover {
+    background-position: 0 0
+}
+
+#rod .rod span {
+    float: left;
+    color: #b3b3b3;
+    font-size: 15px;
+    margin: 50px 0 0 20px;
+    white-space: nowrap
+}
+
+#pre {
+    background: #fff url(img/iBg.png) repeat;
+    border-top: 3px solid #000;
+    padding: 40px 0
+}
+
+#pre .veja {
+    float: left;
+    margin-top: 25px
+}
+
+#pre .veja img {
+    float: left;
+    width: 728px;
+    height: 90px;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s
+}
+
+#pre .veja:hover img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .4)
+}
+
+#pre .trip {
+    float: right
+}
+
+#pre .trip img {
+    float: right;
+    width: 184px;
+    height: 140px;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s
+}
+
+#pre .trip:hover img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .4)
+}
+
+#vin {
+    padding: 72px 0
+}
+
+#vin h2 {
+    margin-bottom: 15px
+}
+
+#vin p {
+    width: 100%;
+    margin-top: 25px;
+    font-size: 23px;
+    color: #000
+}
+
+#vin .sep {
+    float: left;
+    width: 100%;
+    height: 30px;
+    background: url(img/iSepBtn.png) 0 0 no-repeat;
+    margin-top: 36px;
+    position: relative
+}
+
+#vin .sep a {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 28px;
+    top: 0;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute
+}
+
+#vin .sep a:hover {
+    color: #b73f7a;
+    text-decoration: none
+}
+
+#vin .pes {
+    width: 100%;
+    margin: 42px 0 0 1px
+}
+
+#vin .pes i {
+    float: left;
+    width: 230px;
+    height: 230px;
+    background-image: url(img/evento-bardega.jpg);
+    background-repeat: no-repeat;
+    margin-right: 25px
+}
+
+#vin .pes i.f1 {
+    background-position: 0 0
+}
+
+#vin .pes i.f2 {
+    background-position: right 0
+}
+
+#vin .pes p {
+    float: left;
+    width: 680px
+}
+
+#vin .pes strong {
+    font-size: 25px
+}
+
+#vin .pes strong.des {
+    color: #b73f7a;
+    font-family: 'Shadows Into Light Two', Shadows-Aux, Muli;
+    font-size: 18px;
+    letter-spacing: 1px
+}
+
+#vin .pes a {
+    color: #b73f7a
+}
+
+#vin .pes p {
+    font-size: 21px
+}
+
+#car {
+    min-height: 454px;
+    background: #000 url(img/cardapio-bardega-1.jpg) center 0 no-repeat;
+    border-top: 7px solid #000;
+    border-bottom: 7px solid #000
+}
+
+#car .cnt {
+    min-height: 454px;
+    background: url(img/iPreSld.gif) no-repeat center center
+}
+
+#car .box.c1 {
+    width: 545px;
+    margin: 60px 0 0 375px
+}
+
+#car .box.c1 h2 {
+    font-weight: bold;
+    margin-bottom: 15px
+}
+
+#car .box.c1 span {
+    float: left;
+    margin-top: 3px;
+    padding: 10px 25px;
+    clear: right
+}
+
+#car .box.c1 a {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin: 35px 10px 0 0;
+    background: url(img/iCardapio.png?b2710) no-repeat;
+    position: relative
+}
+
+#car .box.c1 a.fri {
+    background-position: 0 0;
+    clear: left
+}
+
+#car .box.c1 a.que {
+    background-position: -74px 0
+}
+
+#car .box.c1 a.sob {
+    background-position: -146px 0
+}
+
+#car .box.c1 a.mai {
+    margin-left: 25px;
+    background-position: -216px 0
+}
+
+#car .box.c1 a.exe {
+    background-position: -290px 0
+}
+
+#car .box.c1 a.piz {
+    background-position: -364px 0
+}
+
+#car .box.c1 a.fri:hover {
+    background-position: 0 -74px
+}
+
+#car .box.c1 a.que:hover {
+    background-position: -74px -74px
+}
+
+#car .box.c1 a.sob:hover {
+    background-position: -146px -74px
+}
+
+#car .box.c1 a.mai:hover {
+    background-position: -216px -74px
+}
+
+#car .box.c1 a.exe:hover {
+    background-position: -290px -74px
+}
+
+#car .box.c1 a.piz:hover {
+    background-position: -364px -74px
+}
+
+#gal-not {
+    margin: 50px 0
+}
+
+#gal-not h2 {
+    margin-bottom: 40px
+}
+
+#gal-not .box.c1 a.fot {
+    float: left;
+    margin: 0 20px 20px 0
+}
+
+#gal-not .box.c1 a.fot>img {
+    float: left;
+    width: 290px;
+    height: 200px;
+    background: url(img/iPreImg.gif) no-repeat 50% 50%
+}
+
+#gal-not .box.c1 a.fot .btn-cir {
+    margin: 16px 0 0 122px
+}
+
+#val {
+    float: left;
+    padding-bottom: 60px
+}
+
+#val.bgBol {
+    padding: 60px 0;
+    border-top: 3px solid #000
+}
+
+#val img {
+    float: left;
+    clear: left;
+    width: 266px;
+    height: 168px;
+    margin-right: 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+
+#val p {
+    float: left;
+    width: 670px
+}
+
+#val .btn {
+    float: left;
+    margin-top: 20px
+}
+
+#s-sob {
+    height: 415px;
+    padding-top: 60px;
+    border-bottom: 2px solid #000;
+    z-index: 10
+}
+
+#s-sob .box.c2 {
+    width: 570px
+}
+
+#s-sob .box.c2 h1 {
+    float: left;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    font-size: 58px;
+    font-weight: normal
+}
+
+#s-sob .box.c2 span {
+    float: left;
+    margin-top: 5px;
+    padding: 10px 25px
+}
+
+#s-sob .vej {
+    float: right;
+    width: 223px;
+    height: 224px;
+    margin-right: 20px;
+    background: url(img/iVej.png) no-repeat
+}
+
+#s-sob .vej:hover {
+    background-position: right 0;
+    cursor: pointer
+}
+
+#s-sob .vej span {
+    float: left;
+    width: 150px;
+    margin: 132px 0 0 37px;
+    text-align: center;
+    line-height: 24px
+}
+
+#s-sob .vej:hover span {
+    color: #b73f7a
+}
+
+#s-sob .lid {
+    float: left;
+    width: 865px;
+    height: 132px;
+    margin: 120px 65px -62px;
+    text-align: center;
+    background: url(img/iLid.png) no-repeat;
+    color: #fff
+}
+
+#s-sob .lid p {
+    float: left;
+    width: 801px;
+    margin: 29px 0 0 28px
+}
+
+#s-sob .lid p .des {
+    margin-left: 2px;
+    color: #fff
+}
+
+#s-con {
+    padding: 75px 0 60px;
+    background: #fff url(img/iBg.png) repeat;
+    border-bottom: 3px solid #000
+}
+
+#s-con h2 {
+    margin: 50px 0 0
+}
+
+#s-con .box.c1 p {
+    float: left;
+    margin-top: 40px;
+    text-align: justify
+}
+
+#s-con .box.c3 {
+    margin-top: 48px
+}
+
+#s-con .box.c3 span.des {
+    float: left;
+    width: 103px;
+    height: 103px;
+    margin: 3px 3px 0 0;
+    padding: 25px 20px 0;
+    font-size: 22px;
+    line-height: 25px;
+    color: #fff;
+    background: #a50051
+}
+
+#s-con .box.c3 .ite {
+    float: left;
+    width: 143px;
+    height: 128px;
+    margin: 3px 3px 0 0;
+    position: relative;
+    overflow: hidden
+}
+
+#s-con .box.c3 .ite>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background: url(img/iPreImg.gif) no-repeat 50% 50%
+}
+
+#s-con .box.c3 .ite span.ret {
+    position: absolute;
+    width: 103px;
+    height: 108px;
+    left: 0;
+    bottom: -128px;
+    padding: 10px 20px;
+    font-size: 57px;
+    line-height: 108px;
+    color: #fff;
+    text-align: center;
+    background: rgba(165, 0, 81, .8)
+}
+
+#s-con .box.c3 .ite span.d {
+    text-align: right
+}
+
+#s-con .box.c3 .ite .btn-cir {
+    width: 35px;
+    margin: 40px 0 0 17px
+}
+
+#s-bar {
+    padding: 60px 0
+}
+
+#s-bar h2 {
+    margin-left: 15px
+}
+
+#s-bar .box.c3 a {
+    float: left;
+    width: 290px;
+    height: 290px;
+    background: url(img/funBar.png);
+    font-family: 'Shadows Into Light Two', Shadows-Aux, Muli;
+    font-size: 29px;
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative
+}
+
+#s-bar .box.c3 a>img {
+    float: left;
+    width: 275px;
+    height: 275px;
+    margin: 7px 0 0 7px;
+    background: url("img/iPreImg.gif") no-repeat 50% 45%;
+    font-size: 1px;
+    text-indent: 85px;
+    line-height: 80px
+}
+
+#s-bar .box.c3 a>i {
+    position: absolute;
+    width: 268px;
+    height: 83px;
+    bottom: 4px;
+    left: 10px;
+    background: url(img/funBarTex.png) no-repeat 10px 0;
+    text-align: center;
+    font-style: normal;
+    line-height: 70px;
+    z-index: 1000
+}
+
+#s-bar .box.c3 a .hov {
+    position: absolute;
+    width: 275px;
+    height: 275px;
+    top: 7px;
+    left: 7px;
+    background: url(img/funBar-h.png);
+    display: none
+}
+
+#s-bar .box.c3 a .btn-cir {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: 105px;
+    left: 110px
+}
+
+#s-bar .box.c3 a .tex {
+    position: absolute;
+    width: 275px;
+    top: 160px;
+    left: 0;
+    text-align: center
+}
+
+#mapa {
+    float: left;
+    width: 800px;
+    height: 500px;
+    display: none
+}
+
+#v-vin {
+    height: 415px;
+    padding-top: 60px;
+    border-bottom: 2px solid #000;
+    z-index: 10
+}
+
+#v-vin .box.c2 {
+    width: 580px
+}
+
+#v-vin .box.c2 h1 {
+    float: left;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    font-size: 58px;
+    font-weight: normal
+}
+
+#v-vin .box.c2 span {
+    float: left;
+    margin-top: 5px;
+    padding: 10px 25px
+}
+
+#v-vin .art {
+    float: right;
+    width: 473px;
+    height: 439px;
+    margin: -10px -133px 0 0;
+    background: url(img/arthur-azevedo-bardega.png) no-repeat
+}
+
+#v-vin .som {
+    float: right;
+    width: 280px;
+    height: 128px;
+    background: url(img/arthur-sommelier.png) no-repeat
+}
+
+#v-con {
+    background: #fff url(img/iBg.png) repeat;
+    padding: 60px 0
+}
+
+#v-con .box.c1 p {
+    text-align: justify;
+    line-height: 35px
+}
+
+#v-con .box.c1 .fp {
+    float: left;
+    width: 322px;
+    margin: 40px 0 50px 75px;
+    padding: 30px 86px 30px 74px;
+    text-align: center;
+    white-space: nowrap;
+    position: relative
+}
+
+#v-con .box.c1 .fp b {
+    position: absolute;
+    width: 30px;
+    height: 120px;
+    top: 22px;
+    background: url(img/aspas.png) no-repeat
+}
+
+#v-con .box.c1 .fp b.esq {
+    left: 22px
+}
+
+#v-con .box.c1 .fp b.dir {
+    right: 22px;
+    background-position: -35px -1px
+}
+
+#v-con .box.c1 .fp span {
+    position: absolute;
+    bottom: -23px;
+    left: 80px;
+    font-size: 15px;
+    font-weight: bold
+}
+
+#v-con .box.c1 .fp i {
+    position: absolute;
+    width: 27px;
+    height: 14px;
+    bottom: -14px;
+    left: 44px;
+    background: url(img/iPonta.png) no-repeat
+}
+
+#v-con .box.c3 #com {
+    float: left;
+    width: 224px;
+    padding: 32px;
+    font-size: 18px;
+    text-align: right;
+    line-height: 25px;
+    border-right: 2px solid #b73f7a;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, .1);
+    -moz-box-shadow: -2px 2px 3px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: -2px 2px 3px rgba(0, 0, 0, .1);
+    position: relative
+}
+
+#v-con .box.c3 #com a {
+    color: #b73f7a
+}
+
+#v-con .box.c3 h2 {
+    float: left;
+    margin: 52px 0 30px;
+    padding: 12px 25px
+}
+
+#v-con .box.c3 a.fot {
+    width: 136px;
+    margin-top: 20px;
+    overflow: hidden;
+    background: url(img/iPreImg.gif) no-repeat 50% 36%
+}
+
+#v-con .box.c3 a.fot.esq {
+    margin-right: 20px
+}
+
+#v-con .box.c3 a.fot .hov .btn-cir {
+    width: 36px;
+    height: 36px;
+    margin: 22px 50px
+}
+
+#v-pra {
+    min-height: 400px;
+    padding: 60px 0;
+    border-top: 3px solid #000
+}
+
+#v-pra h2 {
+    margin-left: 20px
+}
+
+#v-pra .box.c3,
+#v-pra .box.c4 {
+    margin-top: 48px
+}
+
+#v-pra .box.c3 {
+    width: 227px;
+    padding-right: 38px;
+    border-right: 1px solid #bbb
+}
+
+#v-pra .box.c3 p {
+    font-weight: bold
+}
+
+#v-pra .box.c3 .des {
+    font-size: 25px
+}
+
+#v-pra .box.c3 a {
+    margin-top: 35px
+}
+
+#v-pra .box.c4 {
+    width: 190px
+}
+
+#v-pra .box.c4 a {
+    float: left;
+    width: 183px;
+    height: 183px;
+    background: url(img/FunBranRe.png);
+    position: relative
+}
+
+#v-pra .box.c4 a>img {
+    float: left;
+    width: 169px;
+    height: 169px;
+    margin: 7px 0 0 7px;
+    background: url(img/iPreImg.gif) no-repeat 50% 50%;
+    font-size: 12px;
+    text-indent: 32px;
+    line-height: 90px;
+    color: #fff
+}
+
+#v-pra .box.c4 a .ret {
+    position: absolute;
+    width: 169px;
+    height: 169px;
+    top: 7px;
+    left: 7px;
+    background: url(img/iHovImgRed.png);
+    display: none;
+    overflow: hidden
+}
+
+#v-pra .box.c4 a .ret i {
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin: -45px 0 0 62px;
+    background: url(img/iLup.png)
+}
+
+#v-pra .box.c4 a .btn-cir {
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    bottom: -5px;
+    right: 0
+}
+
+#v-pra .box.c4>span {
+    float: left;
+    width: 183px;
+    margin-top: 26px;
+    font: bold 19px/27px Muli;
+    text-transform: uppercase;
+    text-align: center
+}
+
+#c-car {
+    height: 415px;
+    padding-top: 60px;
+    border-bottom: 2px solid #000
+}
+
+#c-car .cnt {
+    position: relative
+}
+
+#c-car .box.c2 {
+    width: 570px
+}
+
+#c-car .box.c2 h1 {
+    float: left;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    font-size: 58px;
+    font-weight: normal
+}
+
+#c-car .box.c2 span {
+    float: left;
+    margin-top: 5px;
+    padding: 10px 25px
+}
+
+#c-car .che {
+    float: right;
+    width: 401px;
+    height: 438px;
+    margin: -23px 0 0 -20px;
+    background: url(img/daniel-martins-bardega.png) no-repeat
+}
+
+#c-car .nom {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    background: url(img/chef-daniel-martins.png) no-repeat;
+    top: -30px;
+    right: 250px
+}
+
+#c-car .car {
+    float: right;
+    width: 223px;
+    height: 224px;
+    margin-right: 20px;
+    background: url(img/iCar.png) no-repeat
+}
+
+#c-car .car:hover {
+    background-position: right 0;
+    cursor: pointer
+}
+
+#c-car .car span {
+    float: left;
+    width: 150px;
+    margin: 132px 0 0 37px;
+    text-align: center;
+    line-height: 24px
+}
+
+#c-car .car:hover span {
+    color: #b73f7a
+}
+
+#c-inf {
+    background: #fff url(img/iBg.png) repeat;
+    padding: 60px 0
+}
+
+#c-inf .box.c2.es {
+    width: 362px;
+    padding: 10px 72px 0 0;
+    background: url(img/Sep-v.png) repeat-y right top
+}
+
+#c-inf .box.c2.es p {
+    padding-bottom: 40px
+}
+
+#c-inf .box.c2.es p.ult {
+    padding-bottom: 20px
+}
+
+#c-inf .box.c2.di {
+    padding-left: 25px
+}
+
+#c-inf .box.c2.di .ite {
+    float: left;
+    width: 345px;
+    margin-bottom: 30px;
+    padding-left: 110px;
+    background: url(img/iCard.png) no-repeat 0 5px
+}
+
+#c-inf .box.c2.di .ite.f {
+    background-position: 0 -134px
+}
+
+#c-inf .box.c2.di .ite.s {
+    background-position: 0 -271px
+}
+
+#c-inf .box.c2.di .ite.p {
+    background-position: 0 -408px
+}
+
+#c-inf .box.c2.di h2 {
+    margin: 0;
+    padding: 0
+}
+
+#c-inf .box.c2.di p {
+    min-height: 40px;
+    margin-top: 10px;
+    font-size: 18px
+}
+
+#c-inf .box.c1,
+#c-inf .box.c3 {
+    margin-top: 40px
+}
+
+#c-inf .box.c1.pr h2 {
+    margin-bottom: 30px
+}
+
+#c-inf .box.c1.ex h2 {
+    margin-bottom: 44px
+}
+
+#c-inf .box.c3 h2 {
+    margin-bottom: 44px
+}
+
+#c-inf .box.c1 .f {
+    float: left;
+    width: 178px;
+    height: 137px;
+    margin: 14px 28px 14px 0;
+    position: relative
+}
+
+#c-inf .box.c1 .f>img {
+    float: left;
+    width: 178px;
+    height: 137px;
+    background: url(img/iPreImg.gif) no-repeat 50% 50%;
+    font-size: 3px;
+    color: #fff;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .15)
+}
+
+#c-inf .box.c1 .f .btn-cir {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: -19px 0 0 69px
+}
+
+#c-inf .box.c1 .f .ret {
+    position: absolute;
+    width: 178px;
+    height: 137px;
+    top: 0;
+    left: 0;
+    display: none;
+    overflow: hidden
+}
+
+#c-inf .box.c1 .f .ret i {
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin: -46px 0 0 66px;
+    background: url(img/iLup.png)
+}
+
+#not,
+#hap {
+    padding: 60px 0;
+    border-top: 3px solid #000
+}
+
+#not h2 {
+    margin-bottom: 5px
+}
+
+#not .not {
+    float: left;
+    margin-top: 55px
+}
+
+#not .not a.fot {
+    width: 320px;
+    height: 240px;
+    margin-right: 20px;
+    border-bottom: 1px solid #000
+}
+
+#not .not a.fot>img {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    background: url(img/iPreImg.gif) no-repeat 50% 50%
+}
+
+#not .not a.fot span.dat {
+    bottom: 0;
+    line-height: 45px
+}
+
+#not .not a.fot span.dat b {
+    margin: 14px 8px 15px 15px
+}
+
+#not .not a.fot .hov .tit {
+    padding-bottom: 15px
+}
+
+#not .not a.fot .hov .data {
+    margin-top: 15px;
+    font-size: 16px
+}
+
+#not .not a.fot .hov .btn-cir {
+    width: 56px;
+    height: 56px;
+    margin: 75px 0 0 132px
+}
+
+#not .not>span {
+    float: left;
+    width: 320px;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .85);
+    color: #000
+}
+
+#not .not>span b {
+    float: left;
+    width: 16px;
+    height: 15px;
+    margin: 8px;
+    background: url(img/iCalen.png) no-repeat
+}
+
+#not .not h3 {
+    width: 540px;
+    line-height: 32px
+}
+
+#not .not p {
+    width: 580px;
+    padding: 27px 0 35px;
+    font-size: 21px
+}
+
+#not .not .cur {
+    float: left
+}
+
+#not .not .face {
+    cursor: default;
+    margin-left: 20px;
+    position: relative;
+    z-index: 100
+}
+
+#not .not .face b {
+    width: 15px;
+    height: 13px;
+    margin: 4px 5px 0 0;
+    background: url(img/iFac.png) no-repeat
+}
+
+#not .not .fb {
+    float: left;
+    width: 345px;
+    height: 25px;
+    margin: 5px 0 0 -57px;
+    background-color: transparent;
+    overflow: hidden
+}
+
+#hap h2 {
+    margin-left: 20px
+}
+
+#hap .box.c3 {
+    margin-top: 20px;
+    position: relative
+}
+
+#hap .box.c3.es {
+    clear: left
+}
+
+#hap .box.c3>i {
+    position: absolute;
+    width: 285px;
+    height: 200px;
+    top: 4px;
+    left: 4px;
+    background: url(img/iRet.png) repeat;
+    display: none
+}
+
+#hap .box.c3>img {
+    float: left;
+    width: 285px;
+    height: 200px;
+    border: 4px solid #fff;
+    background: url(img/iPreImgPng.gif) no-repeat 50% 50%
+}
+
+#hap .box.c3 .btn-cir {
+    width: 51px;
+    height: 51px;
+    margin: -26px 0 -26px 121px
+}
+
+#hap .box.c3 span.tit {
+    float: left;
+    width: 290px;
+    margin-top: 36px;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    clear: left
+}
+
+#hap .box.c3:hover span.tit {
+    color: #b73f7a
+}
+
+#n-con {
+    padding: 60px 0
+}
+
+#n-con .box.c1 h1 {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: normal;
+    color: #b73f7a;
+    line-height: 40px
+}
+
+#n-con .box.c1 img.des {
+    float: left;
+    max-width: 627px !important;
+    min-height: 50px;
+    margin-top: 40px;
+    background: #fff url(img/iPreImg.gif) no-repeat 48% 48%;
+    border-bottom: 2px solid #000 !important;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .18);
+    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .18);
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .18)
+}
+
+#n-con .box.c1 span.com {
+    float: left;
+    width: 480px;
+    margin: 40px 40px 10px;
+    padding: 25px 30px 30px;
+    background: #fff;
+    font-size: 19px;
+    border-right: 2px solid #b73f7a;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, .1);
+    -moz-box-shadow: -2px 2px 3px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: -2px 2px 3px rgba(0, 0, 0, .1);
+    position: relative
+}
+
+#n-con .box.c1 span.com i {
+    position: absolute;
+    width: 27px;
+    height: 14px;
+    bottom: -14px;
+    left: 44px;
+    background: url(img/iPonta.png) no-repeat 0 -16px
+}
+
+#n-con .box.c1 .cont {
+    float: left;
+    margin-top: 40px;
+    font-size: 20px !important
+}
+
+#n-con .box.c1 .cont p {
+    width: 100%;
+    font-size: 20px !important
+}
+
+#n-con .box.c1 .cont img.i {
+    max-width: 550px;
+    border: 1px solid #b71a4c;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .18);
+    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .18);
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .18)
+}
+
+#n-con .box.c1 .cont a {
+    color: #b73f7a;
+    text-decoration: underline
+}
+
+#n-con .box.c1 .cont a:hover {
+    text-decoration: none
+}
+
+#n-con .box.c1 .cont ul {
+    float: left;
+    width: 550px;
+    margin-left: 37px
+}
+
+#n-con .box.c1 .cont .leg {
+    float: left;
+    width: 100%;
+    padding: 7px 0 20px;
+    font: italic 14px/18px Arial;
+    color: #b7004b;
+    letter-spacing: 0
+}
+
+#n-con .box.c1 #fon {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 8px;
+    background: url(img/Sep.png) repeat-x 0 top;
+    font-size: 16px
+}
+
+#n-con .box.c1 #fon .fon {
+    float: right;
+    width: 480px;
+    text-align: right
+}
+
+#n-con .box.c1 #fon i {
+    width: 18px;
+    height: 17px
+}
+
+#n-con .box.c1 #fon .vol i {
+    float: left;
+    margin: 2px 8px 0 2px;
+    background: url(img/iVol.png) no-repeat
+}
+
+#n-con .box.c1 #fon .fon i {
+    float: right;
+    margin: 2px 2px 0 10px;
+    background: url(img/iFon.png) no-repeat
+}
+
+#n-con .box.c3 {
+    margin-bottom: 50px
+}
+
+#n-con .box.c3 a.fot {
+    width: 136px;
+    margin-top: 20px;
+    overflow: hidden;
+    background: url(img/iPreImg.gif) no-repeat 50% 36%
+}
+
+#n-con .box.c3 a.fot.esq {
+    margin-right: 20px
+}
+
+#n-con .box.c3 a.fot .hov .btn-cir {
+    width: 36px;
+    height: 36px;
+    margin: 22px 50px
+}
+
+.box.c3.hap h2 {
+    margin-bottom: 20px
+}
+
+.box.c3.hap a>img {
+    float: left;
+    height: 110px
+}
+
+#g-con,
+#g-cha {
+    padding: 60px 0 30px
+}
+
+#g-cha {
+    border-top: 3px solid #000
+}
+
+#g-con.det {
+    padding: 60px 0
+}
+
+#g-con .gal {
+    float: left;
+    width: 995px;
+    margin-right: -35px;
+    padding-bottom: 40px;
+    clear: left
+}
+
+#g-con .gal .dat {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    font-size: 25px;
+    position: relative;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .1)
+}
+
+#g-con .gal .dat span {
+    width: 50px;
+    height: 31px;
+    padding: 6px 0 8px;
+    text-align: center
+}
+
+#g-con .gal .dat span.dir {
+    font-size: 14px;
+    text-transform: uppercase
+}
+
+#g-con.det .gal h2,
+#g-con .gal h3 {
+    float: left;
+    width: 840px;
+    height: 42px;
+    margin: 4px 0 0 0
+}
+
+#g-con.det .gal h2 {
+    height: auto;
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 30px;
+    padding: 0
+}
+
+#g-con .gal h3 a {
+    float: left;
+    width: 100%;
+    text-decoration: none
+}
+
+#g-con .gal h3:hover a {
+    color: #b73f7a;
+    text-decoration: underline
+}
+
+#g-con .gal p {
+    float: left;
+    width: 960px;
+    padding-top: 30px;
+    text-align: justify
+}
+
+#g-con .gal #fot {
+    float: left;
+    width: 995px;
+    margin-right: -35px
+}
+
+#g-con .gal a.f,
+#g-con .gal a.v,
+#g-con .gal a.m {
+    float: left;
+    width: 176px;
+    height: 135px;
+    margin: 20px 20px 0 0;
+    position: relative
+}
+
+#g-con .gal #fot a {
+    margin-top: 35px
+}
+
+#g-con .gal a>img {
+    float: left;
+    width: 176px;
+    height: 120px;
+    background: url(img/iPreImg.gif) no-repeat 50% 50%;
+    font-size: 3px;
+    color: #fff;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .15)
+}
+
+#g-con .gal a .btn-cir {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: -19px 0 0 66px
+}
+
+#g-con .gal a .ret {
+    position: absolute;
+    width: 176px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    display: none;
+    overflow: hidden
+}
+
+#g-con .gal a .ret i {
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin: -35px 0 0 63px
+}
+
+#g-con .gal a.f .ret i {
+    background: url(img/iLup.png)
+}
+
+#g-con .gal a.v .ret i {
+    background: url(img/iPlay.png)
+}
+
+#g-con .gal a.m .ret {
+    position: absolute;
+    width: 178px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    background: url(img/iRet.png) repeat;
+    display: block;
+    overflow: hidden
+}
+
+#g-con .gal a.m .ret i {
+    float: left;
+    width: 160px;
+    margin: 30px 0 0;
+    font-size: 45px;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: -5px;
+    color: #fff
+}
+
+#g-con #vol {
+    float: left;
+    width: 100%;
+    padding-top: 8px;
+    background: url(img/Sep.png) repeat-x 0 top;
+    font-size: 16px
+}
+
+#g-con #vol i {
+    width: 18px;
+    height: 17px
+}
+
+#g-con #vol .vol i {
+    float: left;
+    margin: 2px 8px 0 2px;
+    background: url(img/iVol.png) no-repeat
+}
+
+#g-cha .box.c2 {
+    padding: 10px 0 40px
+}
+
+#g-cha .box.c2 a.fot {
+    margin-right: 25px
+}
+
+#g-cha .box.c2 a.fot>img {
+    float: left;
+    width: 182px;
+    height: 137px;
+    background: url(img/iPreImgPng.gif) no-repeat 50% 50%;
+    font-size: 11px
+}
+
+#g-cha .box.c2 a.fot .hov .btn-cir {
+    margin: 32px 0 0 68px
+}
+
+#g-cha .box.c2 h3 {
+    float: left;
+    width: 236px;
+    margin-top: -6px;
+    font-size: 23px;
+    line-height: 28px
+}
+
+#g-cha .box.c2 h3.p {
+    margin-top: 22px
+}
+
+#g-cha .box.c2 h3.m {
+    margin-top: 10px
+}
+
+#g-cha .box.c2 a.btn {
+    margin-top: 26px
+}
+
+#b-inf {
+    float: left;
+    width: 100%;
+    padding-bottom: 8px;
+    background: url(img/Sep.png) repeat-x 0 bottom;
+    font-size: 16px
+}
+
+#b-inf .inf {
+    float: left;
+    margin-right: 30px
+}
+
+#b-inf .inf i {
+    float: left;
+    width: 18px;
+    height: 17px;
+    margin: 2px 8px 0 2px
+}
+
+#b-inf .inf.dat i {
+    background: url(img/iCalen.png) no-repeat
+}
+
+#b-inf .inf.aut i {
+    background: url(img/iPes.png) no-repeat
+}
+
+#b-inf .fb {
+    float: right;
+    height: 20px
+}
+
+#b-inf .tw {
+    float: right;
+    width: 100px;
+    height: 20px
+}
+
+#map {
+    min-height: 415px;
+    border-bottom: 2px solid #000
+}
+
+#con {
+    padding: 50px 0;
+    border-bottom: 3px solid #000
+}
+
+#con h2 {
+    margin-bottom: 40px
+}
+
+#con .box.c1 {
+    width: 612px
+}
+
+#con .box.c1 p {
+    width: 95%
+}
+
+#con .box.c1 .frm {
+    float: left;
+    margin-top: 22px
+}
+
+#con .box.c1 .frm input {
+    border: 0
+}
+
+#con .box.c1 .frm input.p {
+    width: 272px;
+    height: 35px;
+    margin-top: 18px;
+    padding: 5px 10px;
+    font: 18px Muli, 'AvantGarde Bk BT', Arial, Tahoma, Sans-Serif;
+    letter-spacing: -1px
+}
+
+#con .box.c1 .frm textarea.g {
+    resize: none;
+    min-width: 592px;
+    max-width: 592px;
+    min-height: 190px;
+    max-height: 190px;
+    margin-top: 18px;
+    padding: 10px;
+    font: 18px Muli, 'AvantGarde Bk BT', Arial, Tahoma, Sans-Serif;
+    letter-spacing: -1px
+}
+
+#con .box.c1 .frm span {
+    float: left;
+    margin-top: 25px;
+    font-size: 18px
+}
+
+#con .box.c1 .frm a {
+    float: right;
+    margin-top: 18px
+}
+
+#con .box.c1 .frm a i {
+    width: 17px;
+    height: 10px;
+    margin: 7px 0 0 10px;
+    background: url(img/iEnv.png) no-repeat
+}
+
+#con .box.c3 {
+    float: right
+}
+
+#con .box.c3 h3 {
+    float: left;
+    width: 260px;
+    font-weight: normal
+}
+
+#con .box.c3 span {
+    float: left;
+    width: 260px;
+    background: url(img/iContP.png) no-repeat 0 40px;
+    font-size: 19px;
+    padding-left: 30px
+}
+
+#con .box.c3 span.tel {
+    margin-bottom: 5px;
+    font-size: 22px;
+    background-position: 0 6px
+}
+
+#con .box.c3 span.ema {
+    background-position: 0 -18px
+}
+
+#con .box.c3 span.ema.e1 {
+    margin-top: 26px
+}
+
+#con .box.c3 span.ema.e2 {
+    margin: 5px 0 30px
+}
+
+#con .box.c3 span.end {
+    width: 230px;
+    margin-bottom: 35px;
+    line-height: 28px;
+    background-position: 0 -42px
+}
+
+#con .box.c3 span.hor {
+    margin-top: 10px;
+    font-size: 22px;
+    background-position: 0 8px
+}
+
+#red {
+    background: url(img/iBg3.jpg) repeat
+}
+
+#red .box.c4 {
+    width: 290px
+}
+
+#red .box.c4 a {
+    float: left;
+    height: 325px;
+    font-size: 15px;
+    text-align: center;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent
+}
+
+#red .box.c4 a img {
+    float: left;
+    margin: 60px 68px 28px
+}
+
+#red .box.c4 a b {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+#red .box.c4 a:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, .5);
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9
+}
+
+#a-con {
+    background: #fff url(img/iBg.png) repeat;
+    padding: 60px 0
+}
+
+#a-con .ite {
+    float: left;
+    width: 100%;
+    padding: 0 0 0 240px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+#a-con .ite+.ite {
+    margin-top: 60px
+}
+
+#a-con .ite .ilu {
+    overflow: hidden;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #fff;
+    margin: 0 0 0 -240px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+#a-con .ite .ilu img {
+    width: inherit;
+    height: inherit;
+    background: url(img/iPreImg.gif) center center no-repeat
+}
+
+#a-con .ite p {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify
+}
+
+#a-con .ite p+p {
+    margin-top: 20px
+}
+
+#a-con .ite p a {
+    color: #b73f7a;
+    font-weight: bold
+}
+
+.showen {
+    position: fixed !important;
+    letter-spacing: 0 !important
+}
+
+.btn-reservar {
+    float: left;
+    background-color: #5a9542;
+    color: #fff;
+    padding: 8px 20px;
+    margin-bottom: 40px
+}
+
+.btn-reservar:hover {
+    text-decoration: none;
+    background-color: #4b7c36;
+    cursor: pointer
+}

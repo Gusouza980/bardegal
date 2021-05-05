@@ -21,7 +21,7 @@ Route::get('/sobre', [\App\Http\Controllers\SiteController::class, 'sobre'])->na
 Route::get('/vinhos', [\App\Http\Controllers\SiteController::class, 'vinhos'])->name("site.vinhos");
 Route::get('/contato', [\App\Http\Controllers\SiteController::class, 'contato'])->name("site.contato");
 Route::get('/blog/{slug}', [\App\Http\Controllers\SiteController::class, 'noticia'])->name("site.noticia");
-
+Route::post('/lead', [\App\Http\Controllers\SiteController::class, 'lead'])->name("site.lead");
 
 Route::get('/sistema/login', [\App\Http\Controllers\PainelController::class, 'login'])->name("painel.login");
 Route::post('/sistema/logar', [\App\Http\Controllers\PainelController::class, 'logar'])->name("painel.logar");
@@ -57,5 +57,11 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/sistema/noticias/editar/{noticia}', [\App\Http\Controllers\NoticiasController::class, 'editar'])->name("painel.noticia.editar");
     Route::post('/sistema/noticias/salvar/{noticia}', [\App\Http\Controllers\NoticiasController::class, 'salvar'])->name("painel.noticia.salvar");
     Route::get('/sistema/noticias/deletar/{noticia}', [\App\Http\Controllers\NoticiasController::class, 'deletar'])->name("painel.noticia.deletar");
+
+    // ROTAS DE GALERIA
+    Route::get('/sistema/galeria', [\App\Http\Controllers\GaleriaController::class, 'index'])->name("painel.galeria");
+    Route::post('/sistema/galeria/adicionar', [\App\Http\Controllers\GaleriaController::class, 'adicionar'])->name("painel.galeria.adicionar");
+    Route::get('/sistema/galeria/remover/{galeria}', [\App\Http\Controllers\GaleriaController::class, 'remover'])->name("painel.galeria.remover");
+    Route::get('/sistema/galeria/exibicao/{galeria}', [\App\Http\Controllers\GaleriaController::class, 'exibicao'])->name("painel.galeria.exibicao");
 
 });

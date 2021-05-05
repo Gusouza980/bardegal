@@ -1,22 +1,6 @@
-<!doctype html>
-<html lang="pt-br">
-
-<head>
-    <title>Bardega</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="{{asset('site/css/main.css')}}">
-</head>
-
+@include('site.includes.head')
 <body>
+    @include('site.includes.fork')
     <div class="container-fluid"  id="nav-mobile-container">
 
         <nav class="navbar navbar-expand-lg navbar-light d-block d-lg-none">
@@ -53,7 +37,7 @@
         </nav>
  
     </div>
-    <div class="container-fluid" style="background: url({{asset('site/imagens/background-home-1.png')}}); background-size: cover; background-position: center;">      
+    <div class="container-fluid" style="background: url({{asset('site/imagens/background-sobre-1.png')}}); background-size: cover; background-position: center;">      
         <div class="row justify-content-center align-items-center" style=" min-height: 100vh;">
             <div class="col-lg-4 col-md-8" style="background-color: black; color:white;">
                 <div class="row">
@@ -196,9 +180,9 @@
             <div class="col-12 col-lg-4 px-0 sobre-section3-content text-lg-left text-center d-none d-lg-block">
                 <img src="{{asset('site/imagens/sobre-section3.png')}}" alt="Começo">
             </div>
-            <div class="col-12 col-lg-6 col-xl-5 mt-5 pt-4 pl-5 sobre-section3-content text-center text-lg-left">
+            <div class="col-12 col-lg-6 col-xl-5 mt-5 pt-4 pl-5 sobre-section3-content text-center text-lg-left py-5">
                 <h4 class="mb-4">Como tudo começou</h4>
-                <span>Os apaixonados por vinhos gostam de variedade, de conversar e de se sentir em casa compartilhando momentos agradáveis com seus amigos. Baseados nesse princípio, um grupo de amigos decidiu realizar um projeto absolutamente inovador e totalmente único para o mercado brasileiro: tiraram os vinhos da adega e colocaram no bar.No Bardega, o que antes era um sonho se tornou realidade, pois o amante do vinho poderá, em uma mesma noite, degustar e comparar vinhos do mundo todo ou ainda conhecer aquele vinho especial, sem gastar uma grande quantia, já que é possível experimentar dezenas de vinhos por  R$ 4,00  ou   R$ 5,00 antes de comprar uma taça ou uma garrafa. O sonho do Bardega fica ainda mais divertido quando o ambiente é agradável e aconchegante, remetendo a sala de estar da sua própria casa.A turma de amigos é bem eclética e por isso a sociedade funciona tão bem. No grupo há empresários, engenheiros e executivos.</span>
+                <span>Os apaixonados por vinhos gostam de variedade, de conversar e de se sentir em casa compartilhando momentos agradáveis com seus amigos. Baseados nesse princípio, um grupo de amigos decidiu realizar um projeto absolutamente inovador e totalmente único para o mercado brasileiro: tiraram os vinhos da adega e colocaram no bar.<br><br>No Bardega, o que antes era um sonho se tornou realidade, pois o amante do vinho poderá, em uma mesma noite, degustar e comparar vinhos do mundo todo ou ainda conhecer aquele vinho especial, sem gastar uma grande quantia, já que é possível experimentar dezenas de vinhos por  R$ 4,00  ou   R$ 5,00 antes de comprar uma taça ou uma garrafa.<br><br>O sonho do Bardega fica ainda mais divertido quando o ambiente é agradável e aconchegante, remetendo a sala de estar da sua própria casa.A turma de amigos é bem eclética e por isso a sociedade funciona tão bem. No grupo há empresários, engenheiros e executivos.</span>
             </div>
             <div class="col-12 col-lg-4 px-0 sobre-section3-content text-lg-left text-center d-block d-lg-none mt-5">
                 <img src="{{asset('site/imagens/sobre-section3.png')}}" alt="Começo">
@@ -278,7 +262,7 @@
         </div>
         <div class="row pb-5 mb-5">
             <div class="col-12 text-center text-lg-left col-lg-8 offset-lg-4 sobre-section5-content">
-                <button class="py-3 px-4">Faça seu evento no Bardega</button>
+                <a href="https://api.whatsapp.com/send?phone=5535991783500" target="_blank" class="py-3 px-4 button-link">Faça seu evento no Bardega</a>
             </div>
         </div>
     </div>
@@ -319,120 +303,7 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-branco-1">
-        <div class="row">
-            <div class="col-12 col-lg-5 pt-5">
-                <div class="row pt-0 pt-lg-5 h-100">
-                    <div class="col-12 col-lg-6 d-none d-lg-block" id="footer-1">
-                        
-                    </div>
-                    <div class="col-12 col-lg-6 mt-0 mt-lg-5">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12 px-0 text-center text-lg-left">
-                                    <img src="{{asset('site/imagens/footer-2.png')}}" id="footer-logo" alt="Logo footer">
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-12 text-center text-lg-left">
-                                    <button id="footer-button-1">Reservar Mesa</button>
-                                </div>
-                            </div>
-                            <div class="row mt-5">
-                                <div class="col-12 text-center text-lg-left pb-5 pb-lg-0" id="footer-text-1">
-                                    (11) 2691 7578<br> 
-                                    (11) 26917579<br><br> 
-                                    reservas@bardega.com.br<br> 
-                                    contato@bardega.com.br<br><br> 
-                                    Rua Dr. Alceu de Campos Rodrigues, 218 Itaim Bibi - São Paulo, SP - 04544-000<br><br>
-                                    Terça a Sábado Das 16h às 22h
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-7 bg-preto-1 pt-5">
-                <div class="row">
-                    <div class="col-12 col-lg-7">
-                        <div class="container-fluid pl-5">
-                            <div class="row">
-                                <div class="col-12 text-center text-lg-left footer-newsletter-text">
-                                    <h5>Newsletter</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 footer-newsletter-text text-center text-lg-left">
-                                    <span>Junte-se à nossa lista de discussão e<br>mantenha-se atualizado com a Bardega</span>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-12 text-center text-lg-left" id="footer-newsletter-input">
-                                    <input type="text" name="email" placeholder=" Informe seu e-mail">
-                                    <button class="ml-n1">Enviar</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 footer-newsletter-text text-center text-lg-left">
-                                    <span>Ao enviar seu e-mail, você aceita a política de privacidade.</span>
-                                </div>
-                            </div>
-                            <div class="row mt-5">
-                                <div class="col-12">
-                                    <div class="text-white text-center text-lg-left" id="footer-links">
-                                        <ul class="px-0" style="list-style: none;">
-                                            <li><i class="fas fa-chevron-right"></i>&nbsp;&nbsp; Home</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Sobre o Bardega</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Vinhos</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Cardápio</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Blog</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Galeria</li>
-                                            <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Contato</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-5 mt-5">
-                        <div class="container-fluid pt-4">
-                            <div class="row">
-                                <div class="col-12 col-lg-7 offset-lg-4 text-center footer-advisor-text">
-                                    <h5>TripAdvisor</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-7 offset-lg-4 text-center footer-advisor-text">
-                                    <img src="{{asset('site/imagens/advisor.png')}}" id="footer-image-advisor" alt="Advisor">
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-lg-4 text-center text-lg-left footer-advisor-text">
-                                    <img src="{{asset('site/imagens/advisor-2.png')}}" id="footer-image-advisor2" alt="Advisor 2">
-                                </div>
-                                <div class="col-12 col-lg-8 text-center text-lg-left footer-advisor-text">
-                                    <span>Curta nossas redes sociais e fique por dentro de tudo o que acontece. </span>
-                                    <p class="mt-3">
-                                        <i class="fab fa-facebook text-white fa-lg"></i>
-                                        <i class="fab fa-instagram text-white fa-lg ml-3"></i>
-                                        <i class="fab fa-twitter text-white fa-lg ml-3"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div id="footer-direitos" class="text-center text-sm-left col-12 col-sm-6 footer-direitos-text pl-0 pl-sm-5">
-                        Todos os direitos reservados
-                    </div>
-                    <div id="footer-copy" class="text-center text-sm-right col-12 col-sm-6 footer-copy-text text-right pr-0 pr-sm-5">
-                        DESENVOLVIDO POR <img src="{{asset('site/imagens/footer-seven.png')}}" alt="Logo 7seven"> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('site.includes.footer')
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
