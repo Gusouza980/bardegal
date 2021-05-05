@@ -63,8 +63,10 @@
                 <span>{{$noticia->categoria->nome}}</span>
             </div>
         </div>
-        <div class="row mt-5 text-white">
-            {!! $noticia->conteudo !!}
+        <div class="row mt-5">
+            <div class="col-12">
+                {!! $noticia->conteudo !!}
+            </div>
         </div>
         <div class="row justify-content-center mt-5">
             <a href="{{route('site.blog')}}">
