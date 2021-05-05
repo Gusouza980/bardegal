@@ -66,7 +66,7 @@ class SiteController extends Controller
         $lead->ip = $ip;
         $lead->estado = $estado;
         $lead->cidade = $cidade;
-        $lead->cep = $ip;
+        $lead->cep = $cep;
         $lead->save();
         toastr()->success("Newsletter assinada !");
         return redirect()->back();
