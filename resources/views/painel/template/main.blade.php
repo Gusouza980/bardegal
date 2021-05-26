@@ -287,6 +287,15 @@ $usuario = \App\Models\Usuario::find(session()->get("usuario")["id"]);
                                     <li><a href="{{route('painel.galeria')}}" key="t-default">Cadastros</a></li>
                                 </ul>
                             </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="far fa-image" aria-hidden="true"></i>
+                                    <span key="t-dashboards">Cardápio</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{route('painel.cardapio')}}" key="t-default">Consultar</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <!-- Sidebar -->

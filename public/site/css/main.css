@@ -6,6 +6,7 @@
     --branco1: white;
     --preto1: black;
 	--preto2: #141111;
+	--cinza1: #444040;
 }
 
 
@@ -29,7 +30,7 @@ a, a:hover, a:focus, a:visited, a:active{
 /* BACKGROUNDS */
 
 .bg-laranja-1 {
-    background-color: var(--laranja1) !important;
+    background-color: var(--cinza1) !important;
 }
 
 .bg-preto-1 {
@@ -55,7 +56,7 @@ a, a:hover, a:focus, a:visited, a:active{
 /* BORDAS */
 
 .border-left-laranja{
-	border-left: 4px solid var(--laranja1);
+	border-left: 4px solid var(--cinza1);
 }
 
 /* NAV */
@@ -139,12 +140,12 @@ a, a:hover, a:focus, a:visited, a:active{
     color: rgba(255, 255, 255, 0.6);
 }
 
-#home-section1-box-botao {
-    width: 181.6px;
+#cardapio-section1-box-botao{
+	width: 230px;
     height: 59.44px;
     left: 578.34px;
     top: 776.07px;
-    background: var(--laranja1);
+    background: var(--cinza1);
     font-family: Bahnschrift;
     font-style: normal;
     font-weight: normal;
@@ -154,7 +155,25 @@ a, a:hover, a:focus, a:visited, a:active{
     letter-spacing: 0.265em;
     text-transform: uppercase;
     color: white;
-    border: 1px solid var(--laranja1);
+    border: 1px solid var(--cinza1);
+}
+
+#home-section1-box-botao {
+    width: 181.6px;
+    height: 59.44px;
+    left: 578.34px;
+    top: 776.07px;
+    background: var(--cinza1);
+    font-family: Bahnschrift;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 108.52%;
+    text-align: center;
+    letter-spacing: 0.265em;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid var(--cinza1);
 }
 
 #home-section1-nav {
@@ -203,11 +222,7 @@ a, a:hover, a:focus, a:visited, a:active{
 /* SECTION 2 */
 
 #home-section2-box1 {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: -200px;
-    width: 313.42px;
+    max-width: 313.42px;
 }
 
 .home-section2-video{
@@ -261,7 +276,7 @@ a, a:hover, a:focus, a:visited, a:active{
     text-align: center;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-    background: var(--laranja1);
+    background: var(--cinza1);
     color: white;
     border: 1px solid var(--laranja);
 }
@@ -345,7 +360,7 @@ a, a:hover, a:focus, a:visited, a:active{
 }
 
 .home-section3-text2 > button{
-    background-color: var(--laranja1);
+    background-color: var(--cinza1);
 	border: 0px;
 	font-family: Bahnschrift;
 	font-style: normal;
@@ -367,8 +382,8 @@ a, a:hover, a:focus, a:visited, a:active{
 }
 
 .home-section3-text3-title{
-	border-left: 3px solid var(--laranja1);
-	color: var(--laranja1);
+	border-left: 3px solid var(--cinza1);
+	color: var(--cinza1);
 	font-family: Bahnschrift;
 	font-style: normal;
 	font-weight: normal;
@@ -413,7 +428,7 @@ a, a:hover, a:focus, a:visited, a:active{
 
 .home-section3-text4{
 	grid-area: texto4;
-	background-color: var(--laranja1);
+	background-color: var(--cinza1);
 	position: relative;
 }
 
@@ -514,7 +529,7 @@ a, a:hover, a:focus, a:visited, a:active{
     height: 59.44px;
     left: 578.34px;
     top: 776.07px;
-    background: var(--laranja1);
+    background: var(--cinza1);
     font-family: Bahnschrift;
     font-style: normal;
     font-weight: normal;
@@ -524,7 +539,7 @@ a, a:hover, a:focus, a:visited, a:active{
     letter-spacing: 0.265em;
     text-transform: uppercase;
     color: white;
-    border: 1px solid var(--laranja1);
+    border: 1px solid var(--cinza1);
 }
 
 #home-section4-box2-title {
@@ -729,7 +744,7 @@ a, a:hover, a:focus, a:visited, a:active{
 	width: 149.29px;
 	height: 48.86px;
 
-	background: var(--laranja1);
+	background: var(--cinza1);
 	border: 0px;
 
 	font-family: Bahnschrift;
@@ -920,8 +935,8 @@ a, a:hover, a:focus, a:visited, a:active{
 #footer-newsletter-input > button{
 	width: 20%;
 	height: 59px;
-	background: var(--laranja2); 
-	border: 0 solid var(--laranja2);
+	background: var(--cinza1); 
+	border: 0 solid var(--cinza1);
 	font-family: Bahnschrift;
 	font-style: normal;
 	font-weight: normal;
@@ -967,12 +982,16 @@ a, a:hover, a:focus, a:visited, a:active{
 
 }
 
+.widCOE2020{
+	margin: 0 auto !important;
+}
+
 /* SOBRE */
 
 /* SECTION 1 */
 
 #sobre-section1-box-botao{
-	background: var(--laranja1);
+	background: var(--cinza1);
     font-family: Bahnschrift;
     font-style: normal;
     font-weight: normal;
@@ -982,7 +1001,7 @@ a, a:hover, a:focus, a:visited, a:active{
     letter-spacing: 0.265em;
     text-transform: uppercase;
     color: white;
-    border: 1px solid var(--laranja1);
+    border: 1px solid var(--cinza1);
 }
 
 /* SECTION 2 */
@@ -1022,7 +1041,7 @@ a, a:hover, a:focus, a:visited, a:active{
 }
 
 #sobre-section2-text > button{
-	background-color: var(--laranja1);
+	background-color: var(--cinza1);
 	border: 0px;
 	font-family: Bahnschrift;
 	font-style: normal;
@@ -1132,7 +1151,7 @@ a, a:hover, a:focus, a:visited, a:active{
 	text-transform: uppercase;
 
 	color: #FFFFFF;
-	background-color: var(--laranja1);
+	background-color: var(--cinza1);
 	position: absolute;
 	bottom: 0px;
 	width: 150px;
@@ -1155,7 +1174,7 @@ a, a:hover, a:focus, a:visited, a:active{
 	letter-spacing: 0.095em;
 	text-transform: uppercase;
 
-	color: var(--laranja1);
+	color: var(--cinza1);
 }
 
 /* SECTION 5 */
@@ -1235,7 +1254,7 @@ a, a:hover, a:focus, a:visited, a:active{
 
 	color: #FFFFFF !important;
 
-	background-color: var(--laranja1);
+	background-color: var(--cinza1);
 	border: 0px;
 }
 
@@ -1256,7 +1275,7 @@ a, a:hover, a:focus, a:visited, a:active{
 	letter-spacing: 0.095em;
 	text-transform: uppercase;
 
-	color: var(--laranja1);
+	color: var(--cinza1);
 }
 
 .sobre-section6-text > span{
@@ -1293,7 +1312,7 @@ a, a:hover, a:focus, a:visited, a:active{
 	letter-spacing: 0.095em;
 	text-transform: uppercase;
 
-	color: var(--laranja1);
+	color: var(--cinza1);
 	padding-top: 12px;
 }
 
@@ -1321,7 +1340,7 @@ a, a:hover, a:focus, a:visited, a:active{
 }
 
 .video-section3-button > a{
-	background-color: var(--laranja1);
+	background-color: var(--cinza1);
 	border: 0px;
 	font-family: Bahnschrift;
 	font-style: normal;
@@ -1348,7 +1367,7 @@ a, a:hover, a:focus, a:visited, a:active{
 	letter-spacing: 0.095em;
 	text-transform: uppercase;
 
-	color: var(--laranja1);
+	color: var(--cinza1);
 }
 
 .vinho-section4-content > h5{
@@ -1365,7 +1384,7 @@ a, a:hover, a:focus, a:visited, a:active{
 }
 
 .vinho-section4-balao{
-	background-color: var(--laranja1);
+	background-color: var(--cinza1);
 	font-family: Bahnschrift;
 	font-style: normal;
 	font-weight: normal;
@@ -1404,7 +1423,7 @@ a, a:hover, a:focus, a:visited, a:active{
 	letter-spacing: 0.095em;
 	text-transform: uppercase;
 
-	color: var(--laranja1);
+	color: var(--cinza1);
 }
 
 .cardapio-section2-galeria > img{

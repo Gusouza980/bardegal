@@ -3,6 +3,7 @@
 /public/storage
 /public/site/imagens/noticias
 /public/site/imagens/galeria
+/public/site/imagens/cardapio
 /storage/*.key
 /vendor
 .env

@@ -2,9 +2,9 @@
 <body>
     @include('site.includes.fork')
     @include("site.includes.menu_mobile")
-    <div class="container-fluid" style="background: url({{asset('site/imagens/cardapio_topo.jpg')}}); background-size: cover; background-position: center;">      
+    <div class="container-fluid" style="background: url({{asset('site/imagens/background-home-1.png')}}); background-size: cover; background-position: center;">      
         <div class="row justify-content-start align-items-center" style=" min-height: 100vh;">
-            <div class="offset-lg-2 offset-md-2 col-lg-5 col-md-8" style="background-color: black; color:white;">
+            <div class="offset-lg-2 offset-md-2 col-lg-4 col-md-8" style="background-color: black; color:white;">
                 <div class="row">
                     <div class="col-12 text-center">
                         <img class="" width="15" src="{{asset('site/imagens/retangulo-laranja.png')}}" alt="Retângulo laranja">
@@ -17,24 +17,24 @@
                 </div>
                 <div class="row justify-content-center pt-3">
                     <div class="col-11 px-5 text-center" id="home-section1-box-text">
-                        Nosso cardápio apresenta acompanhamentos
-                        especialmente criados para harmonizarcom 
-                        nossos memoráveis vinhos.Venha conhecer e saborear!
+                        O ESPAÇO IDEAL PARA O SEU EVENTO!
                     </div>
                 </div>
-                <div class="row justify-content-center pt-5">
+                <div class="row justify-content-center pt-3 pb-5">
+                    <div class="col-11 px-2 text-center" id="home-section1-box-subtext">
+                        Nosso salão modular é
+                        perfeito para atender a
+                        diversos tamanhos e formatos
+                        de eventos.
+                    </div>
+                </div>
+                <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <a href="{{asset($cardapio->caminho)}}" download><button id="cardapio-section1-box-botao">Veja nosso menu</button></a>
+                        <a href="#contato"><button id="cardapio-section1-box-botao">Solicite um orçamento</button></a>
                     </div>
                 </div>
 
-                {{--  <div class="row justify-content-center pt-3 pb-5">
-                    <div class="col-11 px-2 text-center" id="home-section1-box-subtext">
-                        Nosso cardápio apresenta acompanhamentos
-                        especialmente criados para harmonizarcom 
-                        nossos memoráveis vinhos.Venha conhecer e saborear!
-                    </div>
-                </div>  --}}
+                
 
             </div>
         </div>
@@ -88,6 +88,148 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container py-5">
+        @if($confraternizacoes->count() > 0)
+            <div class="row mt-5">
+                <div class="col-12 mt-5 text-center text-lg-left">
+                    <div class="row">
+                        <div class="col-12 galeria-section2-content">
+                            <h3>Confraternizações</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        @foreach($confraternizacoes as $confraternizacao)
+                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
+                                <img src="{{asset($confraternizacao->caminho)}}" alt="Confraternização">
+                            </div>
+                        @endforeach
+                        
+                    </div>
+                </div>
+            </div>
+        @endif
+        @if($eventos->count() > 0)
+            <div class="row mt-5">
+                <div class="col-12 mt-5 text-center text-lg-left">
+                    <div class="row">
+                        <div class="col-12 galeria-section2-content">
+                            <h3>Eventos Coorporativos</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        @foreach($eventos as $evento)
+                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
+                                <img src="{{asset($evento->caminho)}}" alt="Confraternização">
+                            </div>
+                        @endforeach
+                        
+                    </div>
+                </div>
+            </div>
+        @endif
+    </div>
+    <div class="container py-5" id="contato">
+        <div class="row">
+            <div class="col-12 border-left-laranja pl-3 galeria-section2-content text-center text-lg-left">
+                <h1>ENVIE SUA MENSAGEM</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 text-center text-lg-left contato-title">
+                <span>A sua opinião é muito importante para nós.</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <form class="mt-4" action="" method="post">
+                    <div class="row">
+                        <div class="form-group col-12 col-md-6">
+                            <input type="text"
+                              class="form-control contato-input" name="nome" id="" aria-describedby="helpId" placeholder="Nome*">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <input type="text"
+                              class="form-control contato-input" name="telefone" id="" aria-describedby="helpId" placeholder="Telefone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-12 col-md-6">
+                            <input type="email"
+                              class="form-control contato-input" name="email" id="" aria-describedby="helpId" placeholder="Email*">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <input type="text"
+                              class="form-control contato-input" name="cidade" id="" aria-describedby="helpId" placeholder="Cidade">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                              <textarea class="form-control contato-input" name="mensagem" id="" rows="13" placeholder="Escreva uma mensagem*"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-12 col-lg-6 px-5 text-center text-lg-left">
+                <div class="row mt-4">
+                    <div class="col-12 contato-content">
+                        <span><i class="fas fa-phone-volume fa-lg mr-1"></i> (11) 2691 7578</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 contato-content">
+                        <span><i class="fas fa-phone-volume fa-lg mr-1"></i> (11) 2691 7579</span>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 contato-content">
+                        <span><i class="far fa-envelope fa-lg mr-1"></i>  reservas@bardega.com.br</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 contato-content">
+                        <span><i class="far fa-envelope fa-lg mr-1"></i>  contato@bardega.com.br</span>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 contato-content">
+                        <span><i class="fas fa-map-marker-alt fa-lg mr-1"></i> Rua Dr. Alceu de Campos<br>Rodrigues, 218</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 contato-content">
+                        <span> Itaim Bibi - São Paulo,<br> SP - 04544-000</span>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 border-left-laranja pl-3 galeria-section2-content text-center text-lg-left">
+                        <h1>ATENDIMENTO</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 contato-content">
+                        <span> Terça a Sábado Das 16h às 22h</span>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 contato-content">
+                        <span>Curta nossas redes sociais e<br>fique por dentro de tudo o<br>que acontece. </span>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 contato-content">
+                        <i class="fab fa-facebook text-white"></i>
+                        <i class="fab fa-instagram text-white ml-4"></i>
+                        <i class="fab fa-twitter text-white ml-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
     <!-- SECTION 2 -->

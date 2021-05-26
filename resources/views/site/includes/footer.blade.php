@@ -9,12 +9,13 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12 px-0 text-center text-lg-left">
-                                <img src="{{ asset('site/imagens/footer-2.png') }}" id="footer-logo" alt="Logo footer">
+                                <img src="{{ asset('site/imagens/footer-2.png') }}" id="footer-logo"
+                                    alt="Logo footer">
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-12 text-center text-lg-left">
-                                <button id="footer-button-1">Reservar Mesa</button>
+                                <button id="footer-button-1" data-toggle="modal" data-target="#modalReserva">Reservar Mesa</button>
                             </div>
                         </div>
                         <div class="row mt-5">
@@ -87,7 +88,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-7 offset-lg-4 text-center footer-advisor-text">
-                                <div id="trip" class="mx-auto">
+                                {{-- <div id="trip" class="mx-auto">
 
                                     <div id="TA_selfserveprop958" class="TA_selfserveprop">
                                         <div id="CDSWIDSSP" class="widSSP widSSPnarrow" style="width: 240px;"> <a
@@ -192,15 +193,26 @@
                                     <script
                                         src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=958&amp;locationId=6919826&amp;lang=pt&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2">
                                     </script>
+                                </div> --}}
+                                <div id="TA_certificateOfExcellence769" class="TA_certificateOfExcellence">
+                                    <ul id="XAM9ot8" class="TA_links Nh7Lk3MeKe">
+                                        <li id="lZRMMz" class="TbFOX6czpQ"><a target="_blank"
+                                                href="https://www.tripadvisor.pt/Restaurant_Review-g303631-d6919826-Reviews-Bardega_Wine_Bar-Sao_Paulo_State_of_Sao_Paulo.html"><img
+                                                    src="https://www.tripadvisor.pt/img/cdsi/img2/awards/v2/tchotel_2020_LL-14348-2.png"
+                                                    alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO" /></a></li>
+                                    </ul>
                                 </div>
+                                <script async
+                                    src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=769&amp;locationId=6919826&amp;lang=pt_PT&amp;year=2020&amp;display_version=2"
+                                    data-loadtrk onload="this.loadtrk=true"></script>
                                 {{-- <img src="{{asset('site/imagens/advisor.png')}}" id="footer-image-advisor" alt="Advisor"> --}}
                             </div>
                         </div>
                         <div class="row mt-3 justify-content-end">
-                            {{--  <div class="col-12 col-lg-4 text-center text-lg-left footer-advisor-text">
+                            {{-- <div class="col-12 col-lg-4 text-center text-lg-left footer-advisor-text">
                                 <img src="{{ asset('site/imagens/advisor-2.png') }}" id="footer-image-advisor2"
                                     alt="Advisor 2">
-                            </div>  --}}
+                            </div> --}}
                             <div class="col-12 col-lg-8 text-center text-lg-left footer-advisor-text">
                                 <span>Curta nossas redes sociais e fique por dentro de tudo o que acontece. </span>
                                 <p class="mt-3">
@@ -222,6 +234,18 @@
                     class="text-center text-sm-right col-12 col-sm-6 footer-copy-text text-right pr-0 pr-sm-5">
                     DESENVOLVIDO POR <img src="{{ asset('site/imagens/footer-seven.png') }}" alt="Logo 7seven">
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalReserva" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe src="https://module.lafourchette.com/en_US/module/69618-d4897" style="width: 100%; min-height:500px; border:none; scrolling:yes;">
+                </iframe>
             </div>
         </div>
     </div>

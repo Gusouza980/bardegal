@@ -26,20 +26,21 @@
                     <a class="nav-link" href="{{route('site.index')}}">HOME</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="{{route('site.sobre')}}">BERDEGA</a>
-                </li>
-                <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="{{route('site.vinhos')}}">VINHOS</a>
-                </li>
-                <li class="nav-item bg-branco-1 py-4 px-2">
                     <a class="nav-link" href="{{route('site.cardapio')}}">CARDÁPIO</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="{{route('site.blog')}}">BLOG</a>
+                    <a class="nav-link" href="{{route('site.eventos')}}">EVENTOS</a>
+                </li>
+                <li class="nav-item bg-branco-1 py-4 px-2">
+                    <a class="nav-link" href="{{route('site.reserva')}}">RESERVA</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
                     <a class="nav-link" href="{{route('site.galeria')}}">GALERIA</a>
                 </li>
+                <li class="nav-item bg-branco-1 py-4 px-2">
+                    <a class="nav-link" href="{{route('site.blog')}}">BLOG</a>
+                </li>
+
                 <li class="nav-item bg-laranja-1 py-4 px-3">
                     <a class="nav-link" style="color: white !important;" href="{{route('site.contato')}}">CONTATO</a>
                 </li>
@@ -153,7 +154,7 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-preto-2 py-5">
+    {{--  <div class="container-fluid bg-preto-2 py-5">
         <div class="row px-5">
             <div class="col-12 border-left-laranja pl-3 galeria-section3-content">
                 <h2>Fique por dentro<br>do mundo do vinho</h2>
@@ -250,7 +251,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  --}}
 
     @include('site.includes.footer')
 

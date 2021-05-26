@@ -26,19 +26,19 @@
                     <a class="nav-link" href="{{route('site.index')}}">HOME</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="{{route('site.sobre')}}">BERDEGA</a>
-                </li>
-                <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="{{route('site.vinhos')}}">VINHOS</a>
-                </li>
-                <li class="nav-item bg-branco-1 py-4 px-2">
                     <a class="nav-link" href="{{route('site.cardapio')}}">CARDÁPIO</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="{{route('site.blog')}}">BLOG</a>
+                    <a class="nav-link" href="{{route('site.eventos')}}">EVENTOS</a>
+                </li>
+                <li class="nav-item bg-branco-1 py-4 px-2">
+                    <a class="nav-link" href="{{route('site.reserva')}}">RESERVA</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
                     <a class="nav-link" href="{{route('site.galeria')}}">GALERIA</a>
+                </li>
+                <li class="nav-item bg-branco-1 py-4 px-2">
+                    <a class="nav-link" href="{{route('site.blog')}}">BLOG</a>
                 </li>
                 <li class="nav-item bg-laranja-1 py-4 px-3">
                     <a class="nav-link" style="color: white !important;" href="{{route('site.contato')}}">CONTATO</a>

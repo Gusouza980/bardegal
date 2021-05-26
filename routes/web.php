@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [\App\Http\Controllers\SiteController::class, 'index'])->name("site.index");
 Route::get('/blog', [\App\Http\Controllers\SiteController::class, 'blog'])->name("site.blog");
 Route::get('/cardapio', [\App\Http\Controllers\SiteController::class, 'cardapio'])->name("site.cardapio");
+Route::get('/eventos', [\App\Http\Controllers\SiteController::class, 'eventos'])->name("site.eventos");
 Route::get('/galeria', [\App\Http\Controllers\SiteController::class, 'galeria'])->name("site.galeria");
+Route::get('/reserva', [\App\Http\Controllers\SiteController::class, 'reserva'])->name("site.reserva");
 Route::get('/sobre', [\App\Http\Controllers\SiteController::class, 'sobre'])->name("site.sobre");
 Route::get('/vinhos', [\App\Http\Controllers\SiteController::class, 'vinhos'])->name("site.vinhos");
 Route::get('/contato', [\App\Http\Controllers\SiteController::class, 'contato'])->name("site.contato");
@@ -63,5 +65,8 @@ Route::middleware(['admin'])->group(function () {
     Route::post('/sistema/galeria/adicionar', [\App\Http\Controllers\GaleriaController::class, 'adicionar'])->name("painel.galeria.adicionar");
     Route::get('/sistema/galeria/remover/{galeria}', [\App\Http\Controllers\GaleriaController::class, 'remover'])->name("painel.galeria.remover");
     Route::get('/sistema/galeria/exibicao/{galeria}', [\App\Http\Controllers\GaleriaController::class, 'exibicao'])->name("painel.galeria.exibicao");
+
+    Route::get('/sistema/cardapio', [\App\Http\Controllers\CardapioController::class, 'index'])->name("painel.cardapio");
+    Route::post('/sistema/cardapio/salvar', [\App\Http\Controllers\CardapioController::class, 'salvar'])->name("painel.cardapio.salvar");
 
 });

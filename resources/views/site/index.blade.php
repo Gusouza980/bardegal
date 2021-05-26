@@ -1,43 +1,8 @@
 @include('site.includes.head')
 <body>
     @include('site.includes.fork')
-    <div class="container-fluid"  id="nav-mobile-container">
-
-        <nav class="navbar navbar-expand-lg navbar-light d-block d-lg-none">
-            <button class="navbar-toggler float-right" style="color:white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="color:white;"><i class="fas fa-bars"></i></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" style="background-color: black; color: white !important;" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto bg-branco text-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{route('site.index')}}"><span class="span-link link-active">HOME</span> <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.sobre')}}"><span class="span-link">BARDEGA</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.vinhos')}}"><span class="span-link">VINHOS</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.cardapio')}}"><span class="span-link">CARDÁPIO</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.blog')}}"><span class="span-link">BLOG</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.galeria')}}"><span class="span-link">GALERIA</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.contato')}}"><span class="span-link">CONTATO</span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
- 
-    </div>
-    <div class="container-fluid" style="background: url({{asset('site/imagens/background-home-1.png')}}); background-size: cover; background-position: center;">      
+    @include("site.includes.menu_mobile")
+    <div class="container-fluid" style="background: url({{asset('site/imagens/home_topo.jpg')}}); background-size: cover; background-position: center;">      
         <div class="row justify-content-start align-items-center" style=" min-height: 100vh;">
             <div class="offset-lg-2 offset-md-2 col-lg-4 col-md-8" style="background-color: black; color:white;">
                 <div class="row">
@@ -52,19 +17,19 @@
                 </div>
                 <div class="row justify-content-center pt-3">
                     <div class="col-11 px-5 text-center" id="home-section1-box-text">
-                        “O PRIMEIRO, E MAIS PREMIADO BAR DE VÍNHOS DO BRASIL”
+                        O PRIMEIRO, E MAIS PREMIADO WINE BAR DO BRASIL
                     </div>
                 </div>
 
-                <div class="row justify-content-center pt-3">
+                {{--  <div class="row justify-content-center pt-3">
                     <div class="col-11 px-2 text-center" id="home-section1-box-subtext">
                         pela Revista<br> Veja Comer e Beber.
                     </div>
-                </div>
+                </div>  --}}
 
                 <div class="row justify-content-center pt-3">
                     <div class="col-12 text-center">
-                        <button id="home-section1-box-botao">SAIBA MAIS</button>
+                        <a href="{{route('site.sobre')}}"><button id="home-section1-box-botao">SAIBA MAIS</button></a>
                     </div>
                 </div>
             </div>
@@ -76,31 +41,7 @@
             <img class="w-100" src="{{asset('site/imagens/botao-reserva-mesa.png')}}" alt="Reservar mesa">
         </div>  --}}
 
-        <div id="container-nav" class="d-none d-lg-block nav-bottom">
-            <ul id="home-section1-nav">
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.index')}}">HOME</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.sobre')}}">BARDEGA</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.vinhos')}}">VINHOS</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.cardapio')}}">CARDÁPIO</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.blog')}}">BLOG</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.galeria')}}">GALERIA</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3 bg-laranja-1 text-white">
-                    <a href="{{route('site.contato')}}">CONTATO</a>
-                </li>
-            </ul>
-        </div>
+        @include("site.includes.menu")
 
         <div class="d-none d-md-block" id="home-section1-nav-lateral" style="display: block; position: absolute; top: 0px; right: 0px; width: 80px;">
             <div class="container-fluid px-0 py-0">
@@ -111,11 +52,11 @@
                                 <i class="fab fa-instagram fa-lg text-white"></i>
                             </div>
                         </div>
-                        <div class="row mx-0">
+                        {{--  <div class="row mx-0">
                             <div class="col-12 py-3 px-0 text-center">
                                 <i class="fab fa-twitter fa-lg text-white"></i>
                             </div>
-                        </div>
+                        </div>  --}}
                         <div class="row mx-0">
                             <div class="col-12 py-3 px-0 text-center">
                                 <i class="fab fa-whatsapp fa-lg text-white"></i>
@@ -149,12 +90,12 @@
                     </div>
                     <div class="row justify-content-center pt-3">
                         <div class="col-11 px-5 text-center home-section2-box1-text" id="">
-                            110 rótulos selecionados para você!
+                            96 rótulos selecionados para você!
                         </div>
                     </div>
                     <div class="row justify-content-center pt-3">
                         <div class="col-8 text-left home-section2-box1-subtext" id="">
-                            São 110 vinhos do mundo todo para você degustar em taças de 120ml, 60ml ou 30ml.
+                            São 96 vinhos do mundo todo para você degustar em doses de 30ml, 60ml ou 120ml
                         </div>
                     </div>
                     <div class="row justify-content-center mt-5">
@@ -173,7 +114,7 @@
     </div>
     <div class="container-fluid bg-preto-1 d-none d-lg-block">
         <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
-            <div class="col-lg-5 text-center">
+            <div class="col-lg-4 col-xl-3 text-center">
                 <div id="home-section2-box1" class="bg-preto-1 text-white">
                     <div class="row">
                         <div class="col-12 text-center">
@@ -187,12 +128,12 @@
                     </div>
                     <div class="row justify-content-center pt-3">
                         <div class="col-11 px-5 text-center home-section2-box1-text">
-                            110 rótulos selecionados para você!
+                            96 rótulos selecionados para você!
                         </div>
                     </div>
                     <div class="row justify-content-center pt-3">
                         <div class="col-8 text-left home-section2-box1-subtext">
-                            São 110 vinhos do mundo todo para você degustar em taças de 120ml, 60ml ou 30ml.
+                            São 96 vinhos do mundo todo para você degustar em doses de 30ml, 60ml ou 120ml
                         </div>
                     </div>
                     <div class="row justify-content-center mt-5">
@@ -200,14 +141,15 @@
                             <button class="home-section2-box1-botao">SAIBA MAIS</button>
                         </div>
                     </div>
-
                 </div>
+            </div>
+            <div class="col-12 col-lg-7 col-xl-6">
                 <iframe class="home-section2-video" src="https://www.youtube.com/embed/va6fODhfhyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
             </div>
         </div>
     </div>
 
-    <div class="container-fluid d-block d-lg-none py-5">
+    {{--  <div class="container-fluid d-block d-lg-none py-5">
         <div class="row d-flex justify-content-center">
             <div class="mt-4 col-12 col-md-6 home-section3-box-imagem">
                 <img src="{{asset('site/imagens/cardapio-1.png')}}" alt="Cardápio 1">
@@ -268,9 +210,9 @@
                 <img src="{{asset('site/imagens/cardapio-10.png')}}" style="max-width: 328px;" alt="Cardápio 10">
             </div>
         </div>
-    </div>
+    </div>  --}}
 
-    <div class="d-none d-lg-block" id="home-section3">
+    {{--  <div class="d-none d-lg-block" id="home-section3">
         <div class="container-fluid">
             <div id="home-section3-grid">
                 <div class="home-section3-box-imagem" id="home-section3-cardapio1">
@@ -336,8 +278,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid py-5 bg-preto-2 px-5">
+    </div>  --}}
+    {{--  <div class="container-fluid py-5 bg-preto-2 px-5">
         <div class="row d-flex justify-content-center">
             <div class="offset-xl-1 col-lg-6 col-xl-2 px-2" id="home-section4-column1">
                 <div class="container-fluid bg-preto-1 px-0" id="home-section4-box1">
@@ -454,6 +396,28 @@
                 </div>
             </div>
         </div>
+    </div>  --}}
+    <div class="container-fluid bg-preto-2">
+        <div class="row" id="sobre-section3">
+            <div class="col-12 col-lg-4 px-0 sobre-section3-content text-lg-left text-center d-none d-lg-block">
+                <img src="{{asset('site/imagens/sobre-section3.png')}}" alt="Começo">
+            </div>
+            <div class="col-12 col-lg-6 col-xl-5 mt-5 pt-4 pl-5 sobre-section3-content text-center text-lg-left py-5">
+                <h4 class="mb-4">Como funciona</h4>
+                <span>No corredor de wine machines do Bardega você vai encontrar muita variedade e certamente
+                    muita novidade. Oferecemos a maior quantidade de vinhos em taça do País.
+                    Ao chegar, você recebe uma comanda individual, com ela inserida na máquina, você pode
+                    escolher o vinho que deseja e a quantidade de 30ml, 60ml ou 120ml. Temos doses a partir
+                    de R$ 6,00. Além dos sommeliers disponíveis para lhe ajudar, você ainda conta com telas
+                    explicativas.<br><br>
+                    O Bardega proporciona experiências memoráveis não só em relação aos vinhos, mas
+                    também em relação à alta gastronomia, com ótimas opções para harmonização. Confira o
+                    nosso cardápio.</span>
+            </div>
+            <div class="col-12 col-lg-4 px-0 sobre-section3-content text-lg-left text-center d-block d-lg-none mt-5">
+                <img src="{{asset('site/imagens/sobre-section3.png')}}" alt="Começo">
+            </div>
+        </div>
     </div>
 
     @include('site.includes.footer')
@@ -466,7 +430,8 @@
 
     <!-- FONT AWESOME -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
-    <script src="{{asset('site/js/jsfb.js')}}"></script>
+    
+    {{--  <script src="{{asset('site/js/jsfb.js')}}"></script>  --}}
     <script>
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;

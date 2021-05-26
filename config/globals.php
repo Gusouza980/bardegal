@@ -13,6 +13,8 @@ return [
         5 => "Pratos",
         6 => "Vinhos",
         7 => "Happy Hour",
+        8 => "Confraternizações",
+        9 => "Eventos Coorporativos",
     ]
 ];
 

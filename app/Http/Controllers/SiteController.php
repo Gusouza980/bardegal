@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Noticia;
 use App\Models\Lead;
+use App\Models\Cardapio;
+use App\Models\Galeria;
 
 class SiteController extends Controller
 {
@@ -22,7 +24,21 @@ class SiteController extends Controller
     }
 
     public function cardapio(){
-        return view("site.cardapio");
+        $cardapio = Cardapio::first();
+        return view("site.cardapio", ["cardapio" => $cardapio]);
+    }
+
+    public function eventos(){
+        $confraternizacoes = Galeria::where([["categoria", 8], ["ativo", true]])->get();
+        $eventos = Galeria::where([["categoria", 9], ["ativo", true]])->get();
+        return view("site.eventos", [
+            "confraternizacoes" => $confraternizacoes,
+            "eventos" => $eventos
+        ]);
+    }
+
+    public function reserva(){
+        return view("site.reserva");
     }
 
     public function blog(){

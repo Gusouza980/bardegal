@@ -37,9 +37,9 @@
         </nav>
  
     </div>
-    <div class="container-fluid" style="background: url({{asset('site/imagens/background-sobre-1.png')}}); background-size: cover; background-position: center;">      
-        <div class="row justify-content-center align-items-center" style=" min-height: 100vh;">
-            <div class="col-lg-4 col-md-8" style="background-color: black; color:white;">
+    <div class="container-fluid" style="background: url({{asset('site/imagens/sobre_topo.jpg')}}); background-size: cover; background-position: center;">      
+        <div class="row justify-content-start align-items-center" style=" min-height: 100vh;">
+            <div class="offset-lg-2 offset-md-2 col-lg-4 col-md-8" style="background-color: black; color:white;">
                 <div class="row">
                     <div class="col-12 text-center">
                         <img class="" width="15" src="{{asset('site/imagens/retangulo-laranja.png')}}" alt="Retângulo laranja">
@@ -52,14 +52,17 @@
                 </div>
                 <div class="row justify-content-center pt-3">
                     <div class="col-11 px-5 text-center" id="home-section1-box-text">
-                        A adega virou bar
+                        O PRIMEIRO WINE BAR DO BRASIL, ESTÁ EM SÃO PAULO
                     </div>
                 </div>
 
                 <div class="row justify-content-center pt-3">
                     <div class="col-11 px-2 text-center" id="home-section1-box-subtext">
-                        É partindo deste conceito que o novíssimo Bardega 
-                        abriu as portas no Itaim Bibi em São Paulo
+                        O espaço perfeito para
+                        conhecer, degustar
+                        e trocar experiências
+                        sobre vinhos
+                        do mundo todo.
                     </div>
                 </div>
 
@@ -114,11 +117,6 @@
                         </div>
                         <div class="row mx-0">
                             <div class="col-12 py-3 px-0 text-center">
-                                <i class="fab fa-twitter fa-lg text-white"></i>
-                            </div>
-                        </div>
-                        <div class="row mx-0">
-                            <div class="col-12 py-3 px-0 text-center">
                                 <i class="fab fa-whatsapp fa-lg text-white"></i>
                             </div>
                         </div>
@@ -127,26 +125,13 @@
                                 <i class="fab fa-facebook fa-lg text-white"></i>
                             </div>
                         </div>
-                        <div class="row mx-0 mt-2 py-3 text-center justify-content-center">
-                            <div class="col-2 px-0 text-center" id="home-section1-nav-lateral-page-number">
-                                <span>1 / 5</span>
-                            </div>
-                        </div>
-                        <div class="row mx-0">
-                            <div class="col-6 home-section1-nav-lateral-page-buttons bg-preto-1 text-white py-3">
-                                <i class="fas fa-chevron-left fa-sm"></i>
-                            </div>
-                            <div class="col-6 home-section1-nav-lateral-page-buttons bg-laranja-1 text-white py-3">
-                                <i class="fas fa-chevron-right fa-sm"></i>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bg-preto-1" >
+    {{--  <div class="container-fluid bg-preto-1" >
         <div class="row d-flex justify-content-center align-items-center" id="sobre-section2">
             <div class="row justify-content-center align-items-center d-md-flex d-lg-none">
                 <div class="col-10 col-md-8">
@@ -173,7 +158,7 @@
                 
             </div>
         </div>
-    </div>
+    </div>  --}}
 
     <div class="container-fluid bg-preto-2">
         <div class="row" id="sobre-section3">
@@ -182,7 +167,18 @@
             </div>
             <div class="col-12 col-lg-6 col-xl-5 mt-5 pt-4 pl-5 sobre-section3-content text-center text-lg-left py-5">
                 <h4 class="mb-4">Como tudo começou</h4>
-                <span>Os apaixonados por vinhos gostam de variedade, de conversar e de se sentir em casa compartilhando momentos agradáveis com seus amigos. Baseados nesse princípio, um grupo de amigos decidiu realizar um projeto absolutamente inovador e totalmente único para o mercado brasileiro: tiraram os vinhos da adega e colocaram no bar.<br><br>No Bardega, o que antes era um sonho se tornou realidade, pois o amante do vinho poderá, em uma mesma noite, degustar e comparar vinhos do mundo todo ou ainda conhecer aquele vinho especial, sem gastar uma grande quantia, já que é possível experimentar dezenas de vinhos por  R$ 4,00  ou   R$ 5,00 antes de comprar uma taça ou uma garrafa.<br><br>O sonho do Bardega fica ainda mais divertido quando o ambiente é agradável e aconchegante, remetendo a sala de estar da sua própria casa.A turma de amigos é bem eclética e por isso a sociedade funciona tão bem. No grupo há empresários, engenheiros e executivos.</span>
+                <span>Os apaixonados por vinhos gostam de variedade, de conversar e de se sentir em casa
+                    compartilhando momentos agradáveis com seus amigos. Baseados nesse princípio, um
+                    grupo de amigos decidiu realizar um projeto absolutamente inovador e totalmente único
+                    para o mercado brasileiro: tiraram os vinhos da adega e colocaram no bar.<br><br>
+                    No Bardega, o que antes era um sonho se tornou realidade, pois o amante do vinho poderá,
+                    em uma mesma noite, degustar e comparar vinhos do mundo todo ou ainda conhecer
+                    aquele vinho especial, sem gastar uma grande quantia, já que é possível experimentar
+                    doses a partir de R$ 6,00 antes de comprar uma taça ou uma garrafa. O sonho do Bardega
+                    fica ainda mais divertido quando o ambiente é agradável e aconchegante, remetendo a sala
+                    de estar da sua própria casa.<br><br>
+                    A turma de amigos é bem eclética e por isso a sociedade funciona tão bem. No grupo há
+                    empresários, engenheiros e executivos.</span>
             </div>
             <div class="col-12 col-lg-4 px-0 sobre-section3-content text-lg-left text-center d-block d-lg-none mt-5">
                 <img src="{{asset('site/imagens/sobre-section3.png')}}" alt="Começo">
@@ -190,7 +186,7 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-preto-2" id="sobre-section4">
+    {{--  <div class="container-fluid bg-preto-2" id="sobre-section4">
         <div class="row">
             <div class="col-12 text-center mt-5 mt-lg-0">
                 <img src="{{asset('site/imagens/retangulo-laranja.png')}}" alt="Retângulo Laranja">
@@ -301,7 +297,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  --}}
 
     @include('site.includes.footer')
 
