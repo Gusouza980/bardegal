@@ -14,10 +14,7 @@
                     <a class="nav-link" href="#"><i class="fab fa-facebook text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item px-3 py-4 d-none d-xl-block">
-                    <a class="nav-link" href="#"><i class="fab fa-instagram text-white fa-lg"></i></a>
-                </li>
-                <li class="nav-item px-3 py-4 d-none d-xl-block">
-                    <a class="nav-link" href="#"><i class="fab fa-twitter text-white fa-lg"></i></a>
+                    <a class="nav-link" href="https://www.instagram.com/bardega_winebar" target="_blank"><i class="fab fa-instagram text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item px-3 py-4 d-none d-xl-block">
                     <a class="nav-link" href="#"><i class="fab fa-whatsapp text-white fa-lg"></i></a>

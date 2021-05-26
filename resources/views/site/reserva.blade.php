@@ -53,7 +53,7 @@
                     <div class="col-12 px-0">
                         <div class="row pt-5 mt-5 mx-0">
                             <div class="col-12 py-3 px-0 text-center">
-                                <i class="fab fa-instagram fa-lg text-white"></i>
+                                <a href="https://www.instagram.com/bardega_winebar" target="_blank"><i class="fab fa-instagram fa-lg text-white"></i></a>
                             </div>
                         </div>
                         {{--  <div class="row mx-0">

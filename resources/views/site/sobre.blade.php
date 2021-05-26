@@ -1,42 +1,8 @@
 @include('site.includes.head')
 <body>
     @include('site.includes.fork')
-    <div class="container-fluid"  id="nav-mobile-container">
-
-        <nav class="navbar navbar-expand-lg navbar-light d-block d-lg-none">
-            <button class="navbar-toggler float-right" style="color:white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="color:white;"><i class="fas fa-bars"></i></span>
-            </button>
+    @include("site.includes.menu_mobile")
     
-            <div class="collapse navbar-collapse" style="background-color: black; color: white !important;" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto bg-branco text-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{route('site.index')}}"><span class="span-link link-active">HOME</span> <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.sobre')}}"><span class="span-link">BARDEGA</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.vinhos')}}"><span class="span-link">VINHOS</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.cardapio')}}"><span class="span-link">CARDÁPIO</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.blog')}}"><span class="span-link">BLOG</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.galeria')}}"><span class="span-link">GALERIA</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('site.contato')}}"><span class="span-link">CONTATO</span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
- 
-    </div>
     <div class="container-fluid" style="background: url({{asset('site/imagens/sobre_topo.jpg')}}); background-size: cover; background-position: center;">      
         <div class="row justify-content-start align-items-center" style=" min-height: 100vh;">
             <div class="offset-lg-2 offset-md-2 col-lg-4 col-md-8" style="background-color: black; color:white;">
@@ -76,35 +42,8 @@
         <div class="d-none d-md-block" style="display: block; position: absolute; top: 25px; left: 25px;">
             <img class="w-100" src="{{asset('site/imagens/logo-branca.png')}}" alt="Logo Bardega">
         </div>
-        <div class="d-none d-md-block" style="display: block; position: absolute; top: calc(50% - 50px); left: 0px; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
-            <img class="w-100" src="{{asset('site/imagens/botao-reserva-mesa.png')}}" alt="Reservar mesa">
-        </div>
 
-        <div id="container-nav" class="d-none d-lg-block nav-bottom">
-            <ul id="home-section1-nav">
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.index')}}">HOME</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.sobre')}}">BARDEGA</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.vinhos')}}">VINHOS</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.cardapio')}}">CARDÁPIO</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.blog')}}">BLOG</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3">
-                    <a href="{{route('site.galeria')}}">GALERIA</a>
-                </li>
-                <li class="home-section1-nav-item px-4 pt-4 pb-3 bg-laranja-1 text-white">
-                    <a href="{{route('site.contato')}}">CONTATO</a>
-                </li>
-            </ul>
-        </div>
+        @include("site.includes.menu")
 
         <div class="d-none d-md-block" id="home-section1-nav-lateral" style="display: block; position: absolute; top: 0px; right: 0px; width: 80px;">
             <div class="container-fluid px-0 py-0">
@@ -112,7 +51,7 @@
                     <div class="col-12 px-0">
                         <div class="row pt-5 mt-5 mx-0">
                             <div class="col-12 py-3 px-0 text-center">
-                                <i class="fab fa-instagram fa-lg text-white"></i>
+                                <a href="https://www.instagram.com/bardega_winebar" target="_blank"><i class="fab fa-instagram fa-lg text-white"></i></a>
                             </div>
                         </div>
                         <div class="row mx-0">

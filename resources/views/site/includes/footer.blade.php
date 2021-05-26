@@ -66,13 +66,13 @@
                             <div class="col-12">
                                 <div class="text-white text-center text-lg-left" id="footer-links">
                                     <ul class="px-0" style="list-style: none;">
-                                        <li><i class="fas fa-chevron-right"></i>&nbsp;&nbsp; Home</li>
-                                        <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Sobre o Bardega</li>
-                                        <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Vinhos</li>
-                                        <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Cardápio</li>
-                                        <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Blog</li>
-                                        <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Galeria</li>
-                                        <li><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Contato</li>
+                                        <li><a href="{{route('site.index')}}"><i class="fas fa-chevron-right"></i>&nbsp;&nbsp; Home</a></li>
+                                        <li><a href="{{route('site.cardapio')}}"><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Cardápio</a></li>
+                                        <li><a href="{{route('site.eventos')}}"><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Eventos</a></li>
+                                        <li><a href="{{route('site.reserva')}}"><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Reserva</a></li>
+                                        <li><a href="{{route('site.galeria')}}"><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Galeria</a></li>
+                                        <li><a href="{{route('site.blog')}}"><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Blog</a></li>
+                                        <li><a href="{{route('site.contato')}}"><i class="fas fa-chevron-right mt-4"></i>&nbsp;&nbsp; Contato</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -217,8 +217,7 @@
                                 <span>Curta nossas redes sociais e fique por dentro de tudo o que acontece. </span>
                                 <p class="mt-3">
                                     <i class="fab fa-facebook text-white fa-lg"></i>
-                                    <i class="fab fa-instagram text-white fa-lg ml-3"></i>
-                                    <i class="fab fa-twitter text-white fa-lg ml-3"></i>
+                                    <a href="https://www.instagram.com/bardega_winebar" target="_blank"><i class="fab fa-instagram text-white fa-lg ml-3"></i></a>
                                 </p>
                             </div>
                         </div>

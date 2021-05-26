@@ -14,10 +14,7 @@
                     <a class="nav-link" href="#"><i class="fab fa-facebook text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item px-3 py-4 d-none d-xl-block">
-                    <a class="nav-link" href="#"><i class="fab fa-instagram text-white fa-lg"></i></a>
-                </li>
-                <li class="nav-item px-3 py-4 d-none d-xl-block">
-                    <a class="nav-link" href="#"><i class="fab fa-twitter text-white fa-lg"></i></a>
+                    <a class="nav-link" href="https://www.instagram.com/bardega_winebar" target="_blank"><i class="fab fa-instagram text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item px-3 py-4 d-none d-xl-block">
                     <a class="nav-link" href="#"><i class="fab fa-whatsapp text-white fa-lg"></i></a>
@@ -26,19 +23,19 @@
                     <a class="nav-link" href="{{route('site.index')}}">HOME</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="{{route('site.sobre')}}">BERDEGA</a>
-                </li>
-                <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="{{route('site.vinhos')}}">VINHOS</a>
-                </li>
-                <li class="nav-item bg-branco-1 py-4 px-2">
                     <a class="nav-link" href="{{route('site.cardapio')}}">CARDÁPIO</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
-                    <a class="nav-link" href="{{route('site.blog')}}">BLOG</a>
+                    <a class="nav-link" href="{{route('site.eventos')}}">EVENTOS</a>
+                </li>
+                <li class="nav-item bg-branco-1 py-4 px-2">
+                    <a class="nav-link" href="{{route('site.reserva')}}">RESERVA</a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
                     <a class="nav-link" href="{{route('site.galeria')}}">GALERIA</a>
+                </li>
+                <li class="nav-item bg-branco-1 py-4 px-2">
+                    <a class="nav-link" href="{{route('site.blog')}}">BLOG</a>
                 </li>
                 <li class="nav-item bg-laranja-1 py-4 px-3">
                     <a class="nav-link" style="color: white !important;" href="{{route('site.contato')}}">CONTATO</a>
@@ -80,68 +77,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-2 text-center text-lg-left mt-5 mt-lg-0">
-                <div class="container-fluid ml-0 ml-lg-n3">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="home-section4-card-imagem" src="{{asset('site/imagens/blog-2.png')}}" alt="Sherry Week 2">
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mt-4 ml-0 ml-lg-n3">
-                    <div class="row">
-                        <div class="col-12" id="home-section4-box3-title">
-                            Ultimos dias dos pratos da Sherry Week
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12" id="home-section4-box3-calendar">
-                            <i class="far fa-calendar fa-sm"></i> 01.01.2021
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12" id="home-section4-box3-text">
-                            Os pratos feitos especialmente para a Sherry Week estão fazendo sucesso no Bardega.
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12 text-start" id="home-section4-box3-link">
-                            Veja mais <i class="fas fa-plus fa-sm"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-2 text-center text-lg-left mt-5 mt-lg-0">
-                <div class="container-fluid ml-0 ml-lg-n3">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="home-section4-card-imagem" src="{{asset('site/imagens/blog-2.png')}}" alt="Sherry Week 2">
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mt-4 ml-0 ml-lg-n3">
-                    <div class="row">
-                        <div class="col-12" id="home-section4-box3-title">
-                            Ultimos dias dos pratos da Sherry Week
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12" id="home-section4-box3-calendar">
-                            <i class="far fa-calendar fa-sm"></i> 01.01.2021
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12" id="home-section4-box3-text">
-                            Os pratos feitos especialmente para a Sherry Week estão fazendo sucesso no Bardega.
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12 text-start" id="home-section4-box3-link">
-                            Veja mais <i class="fas fa-plus fa-sm"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 
