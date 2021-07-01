@@ -7,6 +7,7 @@ use App\Models\Noticia;
 use App\Models\Lead;
 use App\Models\Cardapio;
 use App\Models\Galeria;
+use App\Classes\Email;
 
 class SiteController extends Controller
 {
@@ -20,7 +21,8 @@ class SiteController extends Controller
     }
 
     public function galeria(){
-        return view("site.galeria");
+        $galeria = Galeria::where("ativo", true)->get();
+        return view("site.galeria", ["galeria" => $galeria]);
     }
 
     public function cardapio(){
@@ -29,8 +31,8 @@ class SiteController extends Controller
     }
 
     public function eventos(){
-        $confraternizacoes = Galeria::where([["categoria", 8], ["ativo", true]])->get();
-        $eventos = Galeria::where([["categoria", 9], ["ativo", true]])->get();
+        $confraternizacoes = Galeria::where([["categoria", 4], ["ativo", true]])->get();
+        $eventos = Galeria::where([["categoria", 5], ["ativo", true]])->get();
         return view("site.eventos", [
             "confraternizacoes" => $confraternizacoes,
             "eventos" => $eventos
@@ -86,5 +88,19 @@ class SiteController extends Controller
         $lead->save();
         toastr()->success("Newsletter assinada !");
         return redirect()->back();
+    }
+
+    public function email(Request $request){
+        $file = "Nome: " . $request->nome . "<br>";
+        $file .= "Telefone: " . $request->telefone . "<br>";
+        $file .= "Email: " . $request->email . "<br>";
+        $file .= "Cidade: " . $request->cidade . "<br>";
+        $file .= "Mensagem:<br> " . $request->mensagem . "<br>";
+        $res = Email::enviar($file, "Novo registro", "", true);
+        if($res){
+            return response()->json("sucesso", 200);
+        }else{
+            return response()->json("erro", 200);
+        }
     }
 }

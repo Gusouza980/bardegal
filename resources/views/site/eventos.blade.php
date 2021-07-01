@@ -63,12 +63,12 @@
                         </div>  --}}
                         <div class="row mx-0">
                             <div class="col-12 py-3 px-0 text-center">
-                                <i class="fab fa-whatsapp fa-lg text-white"></i>
+                                <a href="https://api.whatsapp.com/send?phone=5511974300158" target="_blank"><i class="fab fa-whatsapp fa-lg text-white"></i></a>
                             </div>
                         </div>
                         <div class="row pb-5 mx-0">
                             <div class="col-12 py-3 px-0 text-center">
-                                <i class="fab fa-facebook fa-lg text-white"></i>
+                                <a href="https://www.facebook.com/bardegawinebar" target="_blank"><i class="fab fa-facebook fa-lg text-white"></i></a>
                             </div>
                         </div>
                         {{--  <div class="row mx-0 mt-2 py-3 text-center justify-content-center">
@@ -222,9 +222,8 @@
                 </div>
                 <div class="row mt-3">
                     <div class="col-12 contato-content">
-                        <i class="fab fa-facebook text-white"></i>
+                        <a href="https://www.facebook.com/bardegawinebar"><i class="fab fa-facebook text-white"></i></a>
                         <a href="https://www.instagram.com/bardega_winebar" target="_blank"><i class="fab fa-instagram text-white ml-4"></i></a>
-                        <i class="fab fa-twitter text-white ml-4"></i>
                     </div>
                 </div>
             </div>

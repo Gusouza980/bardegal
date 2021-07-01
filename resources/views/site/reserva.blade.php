@@ -63,12 +63,12 @@
                         </div>  --}}
                         <div class="row mx-0">
                             <div class="col-12 py-3 px-0 text-center">
-                                <i class="fab fa-whatsapp fa-lg text-white"></i>
+                                <a href="https://api.whatsapp.com/send?phone=5511974300158" target="_blank"><i class="fab fa-whatsapp fa-lg text-white"></i></a>
                             </div>
                         </div>
                         <div class="row pb-5 mx-0">
                             <div class="col-12 py-3 px-0 text-center">
-                                <i class="fab fa-facebook fa-lg text-white"></i>
+                                <a href="https://www.facebook.com/bardegawinebar" target="_blank"><i class="fab fa-facebook fa-lg text-white"></i></a>
                             </div>
                         </div>
                         {{--  <div class="row mx-0 mt-2 py-3 text-center justify-content-center">
@@ -96,7 +96,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div align="center">
-                            <iframe src="https://module.lafourchette.com/en_US/module/69618-d4897" style="width: 100%; min-height:500px; border:none; scrolling:yes;">
+                            <iframe src="https://module.lafourchette.com/pt_BR/module/69618-d4897" style="width: 100%; min-height:500px; border:none; scrolling:yes;">
                             </iframe>
                         </div>
                     </div>

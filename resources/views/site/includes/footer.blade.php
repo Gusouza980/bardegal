@@ -8,12 +8,12 @@
                 <div class="col-12 col-lg-6 mt-0 mt-lg-5">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 px-0 text-center text-lg-left">
-                                <img src="{{ asset('site/imagens/footer-2.png') }}" id="footer-logo"
-                                    alt="Logo footer">
+                            <div class="col-12 px-3 text-center text-lg-left">
+                                <a href="{{route('site.index')}}"><img src="{{ asset('site/imagens/logo-preta.png') }}" id="footer-logo"
+                                    alt="Logo footer"></a>
                             </div>
                         </div>
-                        <div class="row mt-3">
+                        <div class="row mt-4">
                             <div class="col-12 text-center text-lg-left">
                                 <button id="footer-button-1" data-toggle="modal" data-target="#modalReserva">Reservar Mesa</button>
                             </div>
@@ -21,11 +21,10 @@
                         <div class="row mt-5">
                             <div class="col-12 text-center text-lg-left pb-5 pb-lg-0" id="footer-text-1">
                                 (11) 2691 7578<br>
-                                (11) 26917579<br><br>
                                 reservas@bardega.com.br<br>
                                 contato@bardega.com.br<br><br>
                                 Rua Dr. Alceu de Campos Rodrigues, 218 Itaim Bibi - São Paulo, SP - 04544-000<br><br>
-                                Terça a Sábado Das 16h às 22h
+                                Terça a Sábado Das 17h às 21h
                             </div>
                         </div>
                     </div>
@@ -216,7 +215,7 @@
                             <div class="col-12 col-lg-8 text-center text-lg-left footer-advisor-text">
                                 <span>Curta nossas redes sociais e fique por dentro de tudo o que acontece. </span>
                                 <p class="mt-3">
-                                    <i class="fab fa-facebook text-white fa-lg"></i>
+                                    <a href="https://www.facebook.com/bardegawinebar" target="_blank"><i class="fab fa-facebook text-white fa-lg"></i></a>
                                     <a href="https://www.instagram.com/bardega_winebar" target="_blank"><i class="fab fa-instagram text-white fa-lg ml-3"></i></a>
                                 </p>
                             </div>
@@ -231,7 +230,7 @@
                 </div>
                 <div id="footer-copy"
                     class="text-center text-sm-right col-12 col-sm-6 footer-copy-text text-right pr-0 pr-sm-5">
-                    DESENVOLVIDO POR <img src="{{ asset('site/imagens/footer-seven.png') }}" alt="Logo 7seven">
+                    DESENVOLVIDO POR <a href="https://7seventrends.com"><img class="mt-n1" src="{{ asset('site/imagens/footer-seven.png') }}" alt="Logo 7seven"></a>
                 </div>
             </div>
         </div>
@@ -243,7 +242,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <iframe src="https://module.lafourchette.com/en_US/module/69618-d4897" style="width: 100%; min-height:500px; border:none; scrolling:yes;">
+                <iframe src="https://module.lafourchette.com/pt_BR/module/69618-d4897" style="width: 100%; min-height:500px; border:none; scrolling:yes;">
                 </iframe>
             </div>
         </div>

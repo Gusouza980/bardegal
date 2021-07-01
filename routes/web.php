@@ -24,6 +24,7 @@ Route::get('/vinhos', [\App\Http\Controllers\SiteController::class, 'vinhos'])->
 Route::get('/contato', [\App\Http\Controllers\SiteController::class, 'contato'])->name("site.contato");
 Route::get('/blog/{slug}', [\App\Http\Controllers\SiteController::class, 'noticia'])->name("site.noticia");
 Route::post('/lead', [\App\Http\Controllers\SiteController::class, 'lead'])->name("site.lead");
+Route::post('/email', [\App\Http\Controllers\SiteController::class, 'email'])->name("site.email");
 
 Route::get('/sistema/login', [\App\Http\Controllers\PainelController::class, 'login'])->name("painel.login");
 Route::post('/sistema/logar', [\App\Http\Controllers\PainelController::class, 'logar'])->name("painel.logar");

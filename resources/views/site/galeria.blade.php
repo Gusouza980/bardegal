@@ -11,13 +11,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item px-3 py-4 d-none d-xl-block">
-                    <a class="nav-link" href="#"><i class="fab fa-facebook text-white fa-lg"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/bardegawinebar" target="_blank"><i class="fab fa-facebook text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item px-3 py-4 d-none d-xl-block">
                     <a class="nav-link" href="https://www.instagram.com/bardega_winebar" target="_blank"><i class="fab fa-instagram text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item px-3 py-4 d-none d-xl-block">
-                    <a class="nav-link" href="#"><i class="fab fa-whatsapp text-white fa-lg"></i></a>
+                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=5511974300158" target="_blank"><i class="fab fa-whatsapp text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
                     <a class="nav-link" href="{{route('site.index')}}">HOME</a>
@@ -63,18 +63,11 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
+                            @foreach($galeria->where("categoria", 1) as $imagem)
+                                <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
+                                    <img src="{{asset($imagem->caminho)}}" style="max-width: 100%;" alt="Exemplo galeria">
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -82,22 +75,15 @@
                     <div class="col-12 mt-5 text-center text-lg-left">
                         <div class="row">
                             <div class="col-12 galeria-section2-content">
-                                <h3>Ambiente Bardega</h3>
+                                <h3>Vinho</h3>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
+                            @foreach($galeria->where("categoria", 2) as $imagem)
+                                <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
+                                    <img src="{{asset($imagem->caminho)}}" style="max-width: 100%;" alt="Exemplo galeria">
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -105,22 +91,15 @@
                     <div class="col-12 mt-5 text-center text-lg-left">
                         <div class="row">
                             <div class="col-12 galeria-section2-content">
-                                <h3>Ambiente Bardega</h3>
+                                <h3>Gastronomia</h3>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
+                            @foreach($galeria->where("categoria", 6) as $imagem)
+                                <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
+                                    <img src="{{asset($imagem->caminho)}}" style="max-width: 100%;" alt="Exemplo galeria">
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -128,22 +107,47 @@
                     <div class="col-12 mt-5 text-center text-lg-left">
                         <div class="row">
                             <div class="col-12 galeria-section2-content">
-                                <h3>Ambiente Bardega</h3>
+                                <h3>Degustações e Harmonizações</h3>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
+                            @foreach($galeria->where("categoria", 7) as $imagem)
+                                <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
+                                    <img src="{{asset($imagem->caminho)}}" style="max-width: 100%;" alt="Exemplo galeria">
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 mt-5 text-center text-lg-left">
+                        <div class="row">
+                            <div class="col-12 galeria-section2-content">
+                                <h3>Happy Hour</h3>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
+                        </div>
+                        <div class="row">
+                            @foreach($galeria->where("categoria", 3) as $imagem)
+                                <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
+                                    <img src="{{asset($imagem->caminho)}}" style="max-width: 100%;" alt="Exemplo galeria">
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 mt-5 text-center text-lg-left">
+                        <div class="row">
+                            <div class="col-12 galeria-section2-content">
+                                <h3>Eventos</h3>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
-                                <img src="{{asset('site/imagens/galeria-section2-exemplo.png')}}" alt="Exemplo galeria">
-                            </div>
+                        </div>
+                        <div class="row">
+                            @foreach($galeria->where("categoria", 5) as $imagem)
+                                <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0 text-center galeria-section2-content">
+                                    <img src="{{asset($imagem->caminho)}}" style="max-width: 100%;" alt="Exemplo galeria">
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

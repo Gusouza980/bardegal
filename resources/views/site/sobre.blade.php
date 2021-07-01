@@ -56,12 +56,12 @@
                         </div>
                         <div class="row mx-0">
                             <div class="col-12 py-3 px-0 text-center">
-                                <i class="fab fa-whatsapp fa-lg text-white"></i>
+                                <a href="https://api.whatsapp.com/send?phone=5511974300158" target="_blank"><i class="fab fa-whatsapp fa-lg text-white"></i></a>
                             </div>
                         </div>
                         <div class="row pb-5 mx-0">
                             <div class="col-12 py-3 px-0 text-center">
-                                <i class="fab fa-facebook fa-lg text-white"></i>
+                                <a href="https://www.facebook.com/bardegawinebar" target="_blank"><i class="fab fa-facebook fa-lg text-white"></i></a>
                             </div>
                         </div>
                     </div>

@@ -11,13 +11,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item px-3 py-4 d-none d-xl-block">
-                    <a class="nav-link" href="#"><i class="fab fa-facebook text-white fa-lg"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/bardegawinebar" target="_blank"><i class="fab fa-facebook text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item px-3 py-4 d-none d-xl-block">
                     <a class="nav-link" href="https://www.instagram.com/bardega_winebar" target="_blank"><i class="fab fa-instagram text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item px-3 py-4 d-none d-xl-block">
-                    <a class="nav-link" href="#"><i class="fab fa-whatsapp text-white fa-lg"></i></a>
+                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=5511974300158" target="_blank"><i class="fab fa-whatsapp text-white fa-lg"></i></a>
                 </li>
                 <li class="nav-item bg-branco-1 py-4 px-2">
                     <a class="nav-link" href="{{route('site.index')}}">HOME</a>
