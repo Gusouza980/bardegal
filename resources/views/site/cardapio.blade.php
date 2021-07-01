@@ -24,7 +24,7 @@
                 </div>
                 <div class="row justify-content-center pt-5">
                     <div class="col-12 text-center">
-                        <a href="{{asset($cardapio->caminho)}}" download><button id="cardapio-section1-box-botao">Veja nosso menu</button></a>
+                        <a href="{{asset($cardapio->caminho)}}" download="CARDAPEIO_BARDEGA.pdf"><button id="cardapio-section1-box-botao">Veja nosso menu</button></a>
                     </div>
                 </div>
 
