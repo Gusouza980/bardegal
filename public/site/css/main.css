@@ -59,6 +59,20 @@ a, a:hover, a:focus, a:visited, a:active{
 	border-left: 4px solid var(--cinza1);
 }
 
+/* button */
+
+.btn-cinza{
+	background-color: var(--cinza1);
+	color: white;
+	border: 0px;
+}
+
+.btn-cinza:hover{
+	background-color: var(--cinza1);
+	color: white;
+	border: 0px;
+}
+
 /* NAV */
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{

@@ -57,7 +57,7 @@
     </div>
 </div>
 
-@for($i = 0; $i < count(config("globals.categorias_galeria")); $i++)
+@for($i = 1; $i < count(config("globals.categorias_galeria")); $i++)
 <div class="row mt-3">
     <div class="col-12 col-xl-6">
         <div class="card">
