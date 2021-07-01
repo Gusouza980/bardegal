@@ -24,9 +24,9 @@ class Email{
 
             $mail->setFrom('enviodeemail@7seventrends.com', 'Contato - Bardega');
             if($admin){
-                // $mail->addAddress("mkt@bardega.com.br"); // Add a recipient, Name is optional
-                // $mail->addAddress("rafael@bardega.com.br ");
-                $mail->addAddress("gusouza980@gmail.com");
+                $mail->addAddress("mkt@bardega.com.br"); // Add a recipient, Name is optional
+                $mail->addAddress("rafael@bardega.com.br ");
+                // $mail->addAddress("gusouza980@gmail.com");
             }else{
                 $mail->addAddress($destinatario); // Add a recipient, Name is optional
             }
