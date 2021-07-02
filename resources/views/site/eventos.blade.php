@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="d-none d-md-block" style="display: block; position: absolute; top: 25px; left: 25px;">
-            <img class="w-100" src="{{asset('site/imagens/logo-branca.png')}}" alt="Logo Bardega">
+            <a href="{{route('site.index')}}"><img class="w-100" src="{{asset('site/imagens/logo-branca.png')}}" alt="Logo Bardega"></a>
         </div>
         {{--  <div class="d-none d-md-block" style="display: block; position: absolute; top: calc(50% - 50px); left: 0px; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
             <img class="w-100" src="{{asset('site/imagens/botao-reserva-mesa.png')}}" alt="Reservar mesa">
@@ -226,7 +226,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 contato-content">
-                        <span> Terça a Sábado Das 16h às 22h</span>
+                        <span> Terça a Sábado Das 17h às 21h</span>
                     </div>
                 </div>
                 <div class="row mt-4">

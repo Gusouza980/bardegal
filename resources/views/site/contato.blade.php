@@ -2,7 +2,7 @@
 <body>
     @include('site.includes.fork')
     <nav class="navbar navbar-expand-lg bg-preto-1">
-        <a class="navbar-brand" href="#"><img src="{{asset('site/imagens/logo-branca.png')}}" alt="Logo Bardega"></a>
+        <a class="navbar-brand" href="{{route('site.index')}}"><img src="{{asset('site/imagens/logo-branca.png')}}" alt="Logo Bardega"></a>
         <button class="navbar-toggler float-right" style="color:white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="color:white;"><i class="fas fa-bars"></i></span>
@@ -140,7 +140,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 contato-content">
-                        <span> Terça a Sábado Das 16h às 22h</span>
+                        <span> Terça a Sábado Das 17h às 21h</span>
                     </div>
                 </div>
                 <div class="row mt-4">

@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="d-none d-md-block" style="display: block; position: absolute; top: 25px; left: 25px;">
-            <img class="w-100" src="{{asset('site/imagens/logo-branca.png')}}" alt="Logo Bardega">
+            <a href="{{route('site.index')}}"><img class="w-100" src="{{asset('site/imagens/logo-branca.png')}}" alt="Logo Bardega"></a>
         </div>
 
         @include("site.includes.menu")

@@ -2,7 +2,7 @@
 <body>
     @include('site.includes.fork')
     <nav class="navbar navbar-expand-lg bg-preto-1">
-        <a class="navbar-brand" href="#"><img src="{{asset('site/imagens/logo-branca.png')}}" alt="Logo Bardega"></a>
+        <a class="navbar-brand" href="{{route('site.index')}}"><img src="{{asset('site/imagens/logo-branca.png')}}" alt="Logo Bardega"></a>
         <button class="navbar-toggler float-right" style="color:white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="color:white;"><i class="fas fa-bars"></i></span>
@@ -50,34 +50,39 @@
             </div>
         </div>
         <div class="row px-5 py-5">
-            <div class="col-lg-4 d-none d-lg-block galeria-section3-imagem-grande">
-                <img src="{{asset('site/imagens/blog-1.png')}}" alt="Sherry Week">
-            </div>
-            <div class="col-12 col-lg-3 text-center text-lg-left mt-0 mt-lg-5">
-                <div class="container-fluid mt-4">
-                    <div class="row">
-                        <div class="col-12" id="home-section4-box3-title">
-                            Ultimos dias dos pratos da Sherry Week
+            @php
+                $noticia = \App\Models\Noticia::orderBy("created_at", "DESC")->where("publicada", true)->first();
+            @endphp
+
+            @if($noticia)
+                <div class="col-lg-4 d-none d-lg-block galeria-section3-imagem-grande">
+                    <img src="{{$noticia->preview}}" alt="{{$noticia->titulo}}">
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-left mt-0 mt-lg-5">
+                    <div class="container-fluid mt-4">
+                        <div class="row">
+                            <div class="col-12" id="home-section4-box3-title">
+                                {{$noticia->titulo}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12" id="home-section4-box3-calendar">
-                            <i class="far fa-calendar fa-sm"></i> 01.01.2021
+                        <div class="row mt-4">
+                            <div class="col-12" id="home-section4-box3-calendar">
+                                <i class="far fa-calendar fa-sm"></i> {{date('d.m.Y', strtotime($noticia->created_at))}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12" id="home-section4-box3-text">
-                            Os pratos feitos especialmente para a Sherry Week estão fazendo sucesso no Bardega.
+                        <div class="row mt-4">
+                            <div class="col-12" id="home-section4-box3-text">
+                                {{$noticia->subtitulo}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12 text-start" id="home-section4-box3-link">
-                            Veja mais <i class="fas fa-plus fa-sm"></i>
+                        <div class="row mt-4">
+                            <div class="col-12 text-start" id="home-section4-box3-link">
+                                <a href="{{route('site.noticia', ['slug' => $noticia->slug])}}">Veja mais <i class="fas fa-plus fa-sm"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            @endif
         </div>
     </div>
 
