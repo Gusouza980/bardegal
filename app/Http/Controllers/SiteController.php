@@ -97,6 +97,8 @@ class SiteController extends Controller
         if(isset($_POST["g-recaptcha-response"])){
             $response = $reCaptcha->verifyResponse($_SERVER['REMOTE_ADDR'], $_POST["g-recaptcha-response"]);
         }
+
+        dd($response);
         if($response == null || !$response->success){
             return response()->json("captcha", 200);
         }
