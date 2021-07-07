@@ -94,11 +94,10 @@ class SiteController extends Controller
     public function email(Request $request){
         $response = null;
         $reCaptcha = new ReCaptcha();
-        if(isset($_POST["g-recaptcha-response"])){
-            $response = $reCaptcha->verifyResponse($_SERVER['REMOTE_ADDR'], $_POST["g-recaptcha-response"]);
+        if(isset($_POST["g_recaptcha_response"])){
+            $response = $reCaptcha->verifyResponse($_SERVER['REMOTE_ADDR'], $_POST["g_recaptcha_response"]);
         }
 
-        // dd($response);
         if($response == null || !$response->success){
             return response()->json("captcha", 200);
         }

@@ -236,6 +236,7 @@
                 var telefone = $("input[name='telefone']").val();
                 var cidade = $("input[name='cidade']").val();
                 var mensagem = $("textarea[name='mensagem']").val();
+                var g_recaptcha_response = $("textarea[name='g-recaptcha-response']").val();
                 var _token = $('meta[name="_token"]').attr('content');
 
                 $.ajaxSetup({
@@ -252,7 +253,8 @@
                         email: email,
                         telefone: telefone,
                         cidade: cidade,
-                        mensagem: mensagem
+                        mensagem: mensagem,
+                        g_recaptcha_response:g_recaptcha_response
                     },
                     dataType: 'JSON',
                     beforeSend: function(){

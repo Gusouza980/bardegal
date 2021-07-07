@@ -172,7 +172,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="contato-botao-enviar">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="g-recaptcha mx-auto" data-sitekey="6Lcub4AbAAAAAOst9h8ChAaI20VT6QhftWnbtiSV"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-3" id="contato-botao-enviar">
                         <div class="col-12">
                             <div class="form-group">
                                 <button type="submit" name="" id="" class="btn btn-cinza btn-lg btn-block">Enviar</button>
@@ -555,6 +560,7 @@
                 var telefone = $("input[name='telefone']").val();
                 var cidade = $("input[name='cidade']").val();
                 var mensagem = $("textarea[name='mensagem']").val();
+                var g_recaptcha_response = $("textarea[name='g-recaptcha-response']").val();
                 var _token = $('meta[name="_token"]').attr('content');
 
                 $.ajaxSetup({
@@ -571,7 +577,8 @@
                         email: email,
                         telefone: telefone,
                         cidade: cidade,
-                        mensagem: mensagem
+                        mensagem: mensagem,
+                        g_recaptcha_response:g_recaptcha_response
                     },
                     dataType: 'JSON',
                     beforeSend: function(){
