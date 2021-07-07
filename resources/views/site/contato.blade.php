@@ -229,7 +229,7 @@
 
     <script>
         $(document).ready(function(){
-            /*$("#form-contato").submit(function(e){
+            $("#form-contato").submit(function(e){
                 e.preventDefault();
                 var nome = $("input[name='nome']").val();
                 var email = $("input[name='email']").val();
@@ -278,7 +278,7 @@
                         $("#contato-ajax-loading").addClass("d-none");
                     }
                 });
-            });*/
+            });
         });
     </script>
 </body>
