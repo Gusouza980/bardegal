@@ -8,6 +8,7 @@ use App\Models\Lead;
 use App\Models\Cardapio;
 use App\Models\Galeria;
 use App\Classes\Email;
+use App\Classes\Recaptcha;
 
 class SiteController extends Controller
 {
@@ -91,6 +92,15 @@ class SiteController extends Controller
     }
 
     public function email(Request $request){
+        $response = null;
+        $reCaptcha = new ReCaptcha();
+        if(isset($_POST["g-recaptcha-response"])){
+            $response = $reCaptcha->verifyResponse($_SERVER['REMOTE_ADDR'], $_POST["g-recaptcha-response"]);
+        }
+        if($response == null || !$response->success){
+            return response()->json("captcha", 200);
+        }
+
         $file = "Nome: " . $request->nome . "<br>";
         $file .= "Telefone: " . $request->telefone . "<br>";
         $file .= "Email: " . $request->email . "<br>";

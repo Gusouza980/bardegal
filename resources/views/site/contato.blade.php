@@ -261,8 +261,10 @@
                     },
                     success: function(data) {
                         console.log(data);
-                        if(data = "sucesso"){
+                        if(data == "sucesso"){
                             $("#modalContatoSucesso").modal();
+                        }else if(data == "captcha"){
+                            console.log("Erro no captcha");
                         }else{
                             $("#modalContatoErro").modal();
                         }
