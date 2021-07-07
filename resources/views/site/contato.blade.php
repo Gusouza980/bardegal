@@ -86,7 +86,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="contato-botao-enviar">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="g-recaptcha mx-auto" data-sitekey="6Lcub4AbAAAAAOst9h8ChAaI20VT6QhftWnbtiSV"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-3" id="contato-botao-enviar">
                         <div class="col-12">
                             <div class="form-group">
                                 <button type="submit" name="" id="" class="btn btn-cinza btn-lg btn-block">Enviar</button>

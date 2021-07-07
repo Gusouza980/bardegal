@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="{{asset('site/css/main.css')}}">
     <link rel="shortcut icon" href="{{asset('favicon.ico')}}" type="image/x-icon">  
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     {{--  <link rel="stylesheet" href="{{asset('site/css/csspadrao.css')}}">  --}}
 </head>
