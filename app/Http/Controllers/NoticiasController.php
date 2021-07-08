@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Noticia;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use Image;
 
 class NoticiasController extends Controller
 {
@@ -25,6 +26,8 @@ class NoticiasController extends Controller
             'titulo' => 'unique:noticias,titulo',
         ]);
 
+        libxml_use_internal_errors(true);
+
         $noticia = new Noticia;
         $noticia->usuario_id = session()->get("usuario")["id"];
         $noticia->titulo = $request->titulo;
@@ -39,6 +42,36 @@ class NoticiasController extends Controller
             );
         }
 
+        $dom = new \DOMDocument();
+        $dom->loadHTML(
+            mb_convert_encoding($noticia->conteudo, 'HTML-ENTITIES', 'UTF-8'),
+            LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD
+        );
+
+        $images = $dom->getElementsByTagName('img');
+
+        foreach ($images as $count => $image) {
+            $src = $image->getAttribute('src');
+
+            if (preg_match('/data:image/', $src)) {
+                preg_match('/data:image\/(?<mime>.*?)\;/', $src, $groups);
+                $mimeType = $groups['mime'];
+                if(!is_dir('site/imagens/noticias/' . Str::slug($noticia->titulo) . "/")){
+                    mkdir('site/imagens/noticias/' . Str::slug($noticia->titulo) . "/");
+                }
+                $path = 'site/imagens/noticias/' . Str::slug($noticia->titulo) . "/" . uniqid('', true) . '.' . $mimeType;
+
+                Image::make($src)
+                    ->encode($mimeType, 80)
+                    ->save(public_path($path));
+
+                $image->removeAttribute('src');
+                $image->setAttribute('src', asset($path));
+            }
+        }
+
+        $noticia->conteudo = $dom->saveHTML();
+        $noticia->publicada = true;
         $noticia->save();
 
         foreach($request->tags as $tag){
@@ -59,7 +92,7 @@ class NoticiasController extends Controller
         $request->validate([
             'titulo' => 'unique:noticias,titulo,'.$noticia->id,
         ]);
-
+        libxml_use_internal_errors(true);
         $noticia->titulo = $request->titulo;
         $noticia->subtitulo = $request->subtitulo;
         $noticia->conteudo = $request->conteudo;
@@ -72,6 +105,37 @@ class NoticiasController extends Controller
                 'site/imagens/noticias/' . Str::slug($noticia->titulo), 'local'
             );
         }
+
+        $dom = new \DOMDocument();
+        $dom->loadHTML(
+            mb_convert_encoding($noticia->conteudo, 'HTML-ENTITIES', 'UTF-8'),
+            LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD
+        );
+
+        $images = $dom->getElementsByTagName('img');
+
+        foreach ($images as $count => $image) {
+            $src = $image->getAttribute('src');
+
+            if (preg_match('/data:image/', $src)) {
+                preg_match('/data:image\/(?<mime>.*?)\;/', $src, $groups);
+                $mimeType = $groups['mime'];
+                if(!is_dir('site/imagens/noticias/' . Str::slug($noticia->titulo) . "/")){
+                    mkdir('site/imagens/noticias/' . Str::slug($noticia->titulo) . "/");
+                }
+                $path = 'site/imagens/noticias/' . Str::slug($noticia->titulo) . "/" . uniqid('', true) . '.' . $mimeType;
+
+                Image::make($src)
+                    ->encode($mimeType, 80)
+                    ->save(public_path($path));
+
+                $image->removeAttribute('src');
+                $image->setAttribute('src', asset($path));
+            }
+        }
+        
+        $noticia->publicada = true;
+        $noticia->conteudo = $dom->saveHTML();
 
         $noticia->save();
         $noticia->tags()->detach();
