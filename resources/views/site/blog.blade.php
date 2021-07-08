@@ -89,41 +89,40 @@
     <div class="container-fluid py-5 px-5">
         <div class="row">
             @foreach(\App\Models\Noticia::where("publicada", true)->get() as $noticia)
-            <div class="col-12 col-lg-3 col-xl-2 text-center text-lg-left col-md-4 col-sm-6 mt-5">
-                <div class="container-fluid ml-0 ml-lg-n3">
-                    <div class="row">
-                        <div class="col-12 blog-noticias-box-img">
-                            <img class="home-section4-card-imagem" src="{{asset($noticia->preview)}}" alt="{{$noticia->titulo}}">
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid mt-4 ml-0 ml-lg-n3">
-                    <div class="row">
-                        <div class="col-12 blog-noticias-box-title">
-                            {{$noticia->titulo}}
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12 blog-noticias-box-calendar">
-                            <i class="far fa-calendar fa-sm"></i> {{date("d/m/Y", strtotime($noticia->created_at))}}
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12 blog-noticias-box-text">
-                            {{$noticia->subtitulo}}
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <a href="{{route('site.noticia', ['slug' => $noticia->slug])}}">
-                            <div class="col-12 text-start blog-noticias-box-link">
-                                Veja mais <i class="fas fa-plus fa-sm"></i>
+                <div class="col-12 col-lg-3 col-xl-2 text-center text-lg-left col-md-4 col-sm-6 mt-5">
+                    <div class="container-fluid ml-0 ml-lg-n3">
+                        <div class="row">
+                            <div class="col-12 blog-noticias-box-img">
+                                <img class="home-section4-card-imagem" src="{{asset($noticia->preview)}}" alt="{{$noticia->titulo}}">
                             </div>
-                        </a>
+                        </div>
+                    </div>
+                    <div class="container-fluid mt-4 ml-0 ml-lg-n3">
+                        <div class="row">
+                            <div class="col-12 blog-noticias-box-title">
+                                {{$noticia->titulo}}
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12 blog-noticias-box-calendar">
+                                <i class="far fa-calendar fa-sm"></i> {{date("d/m/Y", strtotime($noticia->created_at))}}
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12 blog-noticias-box-text">
+                                {{$noticia->subtitulo}}
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <a href="{{route('site.noticia', ['slug' => $noticia->slug])}}">
+                                <div class="col-12 text-start blog-noticias-box-link">
+                                    Veja mais <i class="fas fa-plus fa-sm"></i>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                @endforeach
-            </div>
- 
+            @endforeach
         </div>
 
     </div>
