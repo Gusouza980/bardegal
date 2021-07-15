@@ -35,7 +35,8 @@ class NoticiasController extends Controller
         $noticia->conteudo = $request->conteudo;
         $noticia->slug = Str::slug($noticia->titulo);
         $noticia->categoria_id = $request->categoria_id;
-        
+        $noticia->publicacao = $request->publicacao;
+
         if($request->file("preview")){
             $noticia->preview = $request->file('preview')->store(
                 'site/imagens/noticias/' . Str::slug($noticia->titulo), 'local'
@@ -98,6 +99,7 @@ class NoticiasController extends Controller
         $noticia->conteudo = $request->conteudo;
         $noticia->slug = Str::slug($noticia->titulo);
         $noticia->categoria_id = $request->categoria_id;
+        $noticia->publicacao = $request->publicacao;
 
         if($request->file("preview")){
             Storage::delete($noticia->preview);

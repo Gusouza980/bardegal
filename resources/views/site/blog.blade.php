@@ -51,7 +51,7 @@
         </div>
         <div class="row px-5 py-5">
             @php
-                $noticia = \App\Models\Noticia::orderBy("created_at", "DESC")->where("publicada", true)->first();
+                $noticia = \App\Models\Noticia::orderBy("publicacao", "DESC")->where("publicada", true)->first();
             @endphp
 
             @if($noticia)
@@ -88,7 +88,7 @@
 
     <div class="container-fluid py-5 px-5">
         <div class="row">
-            @foreach(\App\Models\Noticia::where("publicada", true)->get() as $noticia)
+            @foreach(\App\Models\Noticia::where("publicada", true)->orderBy("publicacao", "DESC")->get() as $noticia)
                 <div class="col-12 col-lg-3 col-xl-2 text-center text-lg-left col-md-4 col-sm-6 mt-5">
                     <div class="container-fluid ml-0 ml-lg-n3">
                         <div class="row">

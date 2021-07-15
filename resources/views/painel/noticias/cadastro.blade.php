@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="form-group col-12">
+                        <div class="form-group col-12 col-lg-8">
                             <label for="tags">Tags</label>
                             <select class="js-example-basic-multiple js-states form-control" multiple="multiple" name="tags[]" id="select_tag" multiple required>
                                 <option value="" label="default"></option>
@@ -60,6 +60,11 @@
                                     <option value="{{$tag->id}}">{{$tag->nome}}</option>
                                 @endforeach
                             </select>
+                        </div>
+                        <div class="form-group col-12 col-lg-4">
+                            <label for="publicacao">Publicação</label>
+                            <input type="date" class="form-control" name="publicacao"
+                                id="publicacao" value="{{date('Y-m-d')}}" required>
                         </div>
                     </div>
                     <div class="row mt-3">
