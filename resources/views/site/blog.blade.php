@@ -67,7 +67,7 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-12" id="home-section4-box3-calendar">
-                                <i class="far fa-calendar fa-sm"></i> {{date('d.m.Y', strtotime($noticia->created_at))}}
+                                <i class="far fa-calendar fa-sm"></i> {{date('d.m.Y', strtotime($noticia->publicacao))}}
                             </div>
                         </div>
                         <div class="row mt-4">
@@ -105,7 +105,7 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-12 blog-noticias-box-calendar">
-                                <i class="far fa-calendar fa-sm"></i> {{date("d/m/Y", strtotime($noticia->created_at))}}
+                                <i class="far fa-calendar fa-sm"></i> {{date("d/m/Y", strtotime($noticia->publicacao))}}
                             </div>
                         </div>
                         <div class="row mt-4">
